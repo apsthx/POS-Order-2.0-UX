@@ -1,0 +1,47 @@
+<h1 id="bootstrap-carousel-touch-slider-with-slide-text-animation">Bootstrap Carousel Touch Slider with slide text Animation</h1>
+<p>Adding Touch behavior to Bootstrap&#39;s Carousel and add animation in text slide.</p>
+<h2 id="usage">Usage</h2>
+<p>Just include the library in your page and create the carousel components
+normally, as described in the <a href="http://getbootstrap.com/javascript/#carousel">official Bootstrap documentation</a>.</p>
+<pre><code class="lang-html">&lt;!--css Add this in header--&gt;
+&lt;head&gt;
+&lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;
+&lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;
+&lt;link href=&quot;https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;
+
+&lt;!-- Bootstrap bootstrap-touch-slider Slider Main Style Sheet --&gt;
+&lt;link href=&quot;bootstrap-touch-slider.css&quot; rel=&quot;stylesheet&quot; media=&quot;all&quot;&gt;
+&lt;/head&gt;
+
+
+&lt;body&gt;
+
+
+&lt;!--Slide effect: slide, fade 
+Text Align: slide_style_center, slide_style_left, slide_style_right
+Add animation in text: https://daneden.github.io/animate.css/
+ --&gt;
+
+&lt;!-- Create carousels normally: http://getbootstrap.com/javascript/#carousel --&gt;
+&lt;div id=&quot;bootstrap-touch-slider&quot; class=&quot;carousel bs-slider fade  control-round indicators-line&quot; data-ride=&quot;carousel&quot;&gt;
+  ...
+&lt;/div&gt;
+
+
+
+&lt;!-- Add this before end body tag --&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchSwipe.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;bootstrap-touch-slider.js&quot;&gt;&lt;/script&gt;
+
+&lt;script type=&quot;text/javascript&quot;&gt;
+    $(&#39;#bootstrap-touch-slider&#39;).bsTouchSlider();
+&lt;/script&gt;
+
+&lt;/body&gt;
+</code></pre>
+<p>Inititalization: No option available just add this.</p>
+<pre><code class="lang-javascript">    $(&#39;#bootstrap-touch-slider&#39;).bsTouchSlider();
+</code></pre>
+<p> Credits: Bootstrap, jQuery, TouchSwipe, Animate.css, FontAwesome</p>

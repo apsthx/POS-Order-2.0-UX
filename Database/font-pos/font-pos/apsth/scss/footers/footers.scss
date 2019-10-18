@@ -1,0 +1,167 @@
+  
+@import '../variable';
+/*******************
+Footer 1
+*******************/
+.footer1{
+    .f1-topbar{
+        border-bottom: 1px dashed $border;
+        .navbar{
+            padding: 0px;
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color:$bodytext;
+                        display: block;
+                        padding: 15px 13px;
+                    }
+                    &:hover .nav-link, &.active .nav-link{
+                        color:$themecolor;
+                    }
+                }
+            }
+        }
+    }
+    .f1-middle{
+        padding: 40px  0; 
+    }
+    .f1-bottom-bar{
+        padding:20px 0;
+        border-top:1px solid $border;
+    }
+}
+
+/*******************
+Footer 2
+*******************/
+.footer2{
+    padding: 60px 0;
+    .f2-topbar{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border;
+    }
+    .f2-middle{
+        padding-top:40px;
+    }
+    .link{
+        color:$muted;
+        padding:10px 15px 10px 0;  
+    }
+    .general-listing{
+        li a{
+            i{
+                font-size:9px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .info-box .d-flex{
+        padding: 15px 0;
+        border-bottom: 1px solid $border;
+    }
+    .subscribe-box{
+        background: $border;
+        padding: 25px;
+        .form-control{
+            background: transparent;
+            padding: 10px 0;
+            border:0px;
+            border-bottom: 1px solid $border;
+            color:$white;
+            border-radius: 0px;
+            &:focus{
+                border-bottom: 1px solid $white;
+            }
+        }
+    }
+}
+
+/*******************
+Footer 3
+*******************/
+.footer3{
+    padding-top: 50px;
+    .f3-topbar{
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border;
+        .input-group{
+            .form-control{
+                font-size:16px;
+            }
+            .btn{
+                padding: 15px 20px;
+            }
+        }
+    }
+    .f3-middle{
+        padding-top:40px; 
+    }
+    .general-listing{
+        li:hover {
+            a, i{
+                color:$white;
+            }
+        }
+    }
+    .link{
+        color:$bodytext;
+        &:hover{
+            color:$white;
+        }
+    }
+    .f3-bottom-bar{
+        background: rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        .link{
+            padding: 0 12px;
+        }
+    }
+}
+
+/*******************
+Footer 4
+*******************/
+.footer4{
+    .f4-bottom-bar{
+        padding-top: 10px;
+        margin-top: 20px;
+        border-top: 1px solid $border;
+    }
+}
+
+.footer5{
+    .form-control{
+        background: $white;
+    }
+    .social-links{
+        margin: 20px 0;
+        a{
+            color:$bodytext;
+            opacity: 0.5;
+            padding: 0 15px 0 0;
+            &:hover{
+                color:$themecolor;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+/*******************
+Footer 6
+*******************/
+.footer6{
+    .round-social{
+        a {
+            background:$border;
+            color:$muted;
+            width:40px;
+            height:40px;
+            line-height:40px;
+            &:hover{
+            color:$white;
+            }
+        }
+    }
+   
+}

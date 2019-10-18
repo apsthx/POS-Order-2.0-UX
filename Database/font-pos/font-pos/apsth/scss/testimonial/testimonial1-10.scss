@@ -1,0 +1,384 @@
+  @import '../variable';
+  /*******************
+Testimonial 1
+*******************/
+  
+  .testimonial1 {
+      .testi1 {
+          .card-body {
+              padding: 35px;
+          }
+          .thumb {
+              position: relative;
+              padding: 10px 20px 10px;
+              padding-left: 90px;
+              margin-left: -35px;
+              display: inline-block;
+              color: $white;
+              margin-bottom: 30px;
+              .thumb-img {
+                  width: 60px;
+                  position: absolute;
+                  left: 20px;
+                  top: -10px;
+              }
+          }
+          h5 {
+              line-height: 30px;
+          }
+          .devider {
+              height: 1px;
+              background: $border;
+              margin: 20px 0;
+              display: inline-block;
+              width: 100px;
+          }
+      }
+  }
+/*******************
+Testimonial 2
+*******************/
+  
+  .testimonial2 {
+      .testi2 {
+          .image-thumb {
+              background: url(../../../assets/images/testimonial/greadint-bg.png) no-repeat top center;
+              text-align: center;
+              padding: 10% 0;
+              img {
+                  width: 400px;
+              }
+          }
+          .owl-dots {
+              display: inline-block;
+              position: relative;
+              top: -100px;
+              .owl-dot {
+                  border-radius: 100%;
+                  width: 70px;
+                  height: 70px;
+                  background-size: cover;
+                  margin-right: 10px;
+                  opacity: 0.4;
+                  cursor: pointer;
+                  span {
+                      display: none;
+                  }
+                  &.active,
+                  &:hover {
+                      opacity: 1;
+                  }
+              }
+          }
+      }
+  }
+  
+  @media(max-width:767px) {
+      .testimonial2 {
+          .testi2 {
+              .owl-dots {
+                  top: 0px;
+              }
+          }
+      }
+  }
+/*******************
+Testimonial 3
+*******************/
+  
+  .testimonial3 {
+      .testi3 {
+          .card-body {
+              padding: 40px;
+          }
+          h6 {
+              line-height: 26px;
+          }
+          .thumb-img {
+              img {
+                  width: 60px;
+              }
+          }
+          .customer {
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 500;
+          }
+      }
+  }
+/*******************
+Testimonial 4
+*******************/
+  
+  .testimonial4 {
+      .owl-dots {
+          counter-reset: dots;
+          text-align: left;
+          .owl-dot {
+              padding: 15px 20px 10px 0;
+              cursor: pointer;
+              span {
+                  display: none;
+              }
+              &:before {
+                  counter-increment: dots;
+                  content: counter(dots);
+              }
+              &.active:before{
+                  font-weight: 500;
+                  color:$dark;
+                  border-bottom: 2px solid $dark;
+              }
+          }
+      }
+  }
+
+/*******************
+Testimonial 5
+*******************/
+  
+.testimonial5 {
+    .testi5{
+        position: relative;
+        .content{
+            font-size: 21px;
+            line-height: 30px;
+            padding: 50px 30px;
+        }
+        .owl-item.center .content{
+            color:$white;
+            @include linear-gradient (to right, $danger 0%, $orange 100%); 
+        }
+        .customer-thumb{
+            margin-top: -30px;
+            display: none;
+            img{
+                width:60px;
+                margin-bottom: 20px;
+            }
+        }
+        .owl-item.center .customer-thumb{
+            display: block;
+        }
+        
+    }
+}
+
+/*******************
+Testimonial 6
+*******************/
+  
+.testimonial6 {
+    .testi6{
+        border-right:1px solid $border;
+        .nav-link {
+            border-radius: 0px;
+            margin: 8px -2px 8px 0;
+            img{
+                width: 70px;
+                opacity: 0.5;
+            }
+            &.active{
+                background: transparent;
+                color:$bodytext;
+                border-right:3px solid $success;
+                img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .testimonial6 {
+        .testi6{
+            flex-direction: row!important;
+            border-right:0px solid $border;
+            border-bottom: 1px solid $border;
+            margin-bottom: 40px;
+            .nav-link {
+                margin: 0px 0px -2px 0;
+                padding: 10px;
+                &.active{
+                    border-right:0px solid $success;
+                    border-bottom:3px solid $success;
+                }
+                img{
+                    width: 40px;
+                }
+            }
+        }
+    }
+    
+}
+
+/*******************
+Testimonial 7
+*******************/
+  
+.testimonial7 {
+    background: $info; /* Old browsers */
+    background: -moz-linear-gradient(left, $info 0%, $info 48%, $light 48%, $light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, $info 0%,$info 51%,$light 48%,$light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, $info 0%,$info 48%,$light 48%,$light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$info', endColorstr='$light',GradientType=1 ); /* IE6-9 */
+    
+    .testi7{
+        .title{
+            margin-top: 80px;
+        }
+        .owl-nav{
+            float: right;
+            [class*='owl-']{
+                background: transparent;
+                color:$bodytext;
+                font-size: 34px;
+                margin: -100px 0 0 0px;
+                &:hover{
+                    color:$dark;
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px) {
+    .testimonial7 {
+        background: -moz-linear-gradient(top, $info 0%, $info 51%, $light 51%, $light 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $info 0%,$info 51%,$light 51%,$light 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $info 0%,$info 51%,$light 51%,$light 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$info', endColorstr='$light',GradientType=1 ); /* IE6-9 */
+    
+        
+    }
+}
+
+/*******************
+Testimonial 8
+*******************/
+.testimonial8 {
+    .testi8{
+        margin-bottom: 80px;
+        .bg{
+            background-size: cover;
+            padding: 150px 0; 
+        }
+        .play-icon{
+            font-size: 34px;
+            color:$white;
+        }
+        .owl-dots {
+              display: inline-block;
+              position: relative;
+              top: -45px;
+              .owl-dot {
+                  border-radius: 100%;
+                  width: 70px;
+                  height: 70px;
+                  background-size: cover;
+                  margin-right: 10px;
+                  opacity: 0.4;
+                  cursor: pointer;
+                  span {
+                      display: none;
+                  }
+                  &.active,
+                  &:hover {
+                      opacity: 1;
+                  }
+              }
+          }
+    }
+    
+}
+
+/*******************
+Testimonial 9
+*******************/
+.testimonial9 {
+    .card{
+        position: relative;
+            .p-40::after{
+            position: absolute;
+            bottom:-15px;
+            left: 20;
+            content: '';
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+            border-top: 15px solid $white;
+        }
+    }
+    .owl-theme .owl-dots .owl-dot{
+        &.active span, &:hover span{
+            background: $info;
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        left: -98%;
+        top: 70%;
+    }
+    .devider{
+        height:2px;
+        width: 40px;
+        display: inline-block;
+        margin: 22px 0;
+    }
+    h5.text{
+        line-height: 30px;
+        font-weight: 300;
+    }
+    .customer-thumb{
+        img{
+            width: 60px;
+            margin-right: 20px;
+        }
+    }
+    .d-flex{
+        margin-left: 25px;
+    }
+}
+
+@media(max-width:767px) {
+   .testimonial9 {
+       .owl-dots{
+        position: relative;
+        top:0px;
+        left:0px;
+        }
+    }   
+}
+
+/*******************
+Testimonial 10
+*******************/
+.testimonial10 {
+    .testi10{
+        .quote-bg{
+            max-width: 800px; 
+            width: 100%;
+            margin: 0 auto;
+            padding: 60px;
+            background: url(../../../assets/images/testimonial/up-quote.png) no-repeat top left, url(../../../assets/images/testimonial/down-quote.png) no-repeat bottom right;
+        }
+        h3{
+            line-height: 40px;
+        }
+        .customer-thumb{
+            margin: 15px 0;
+            img{
+                width: 60px;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:767px) {
+   .testimonial10 {
+       .testi10 h3{
+            line-height: 30px;
+           font-size:20px;
+        }
+    }   
+}

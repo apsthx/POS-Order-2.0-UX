@@ -1,0 +1,81 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+slide 1
+*******************/
+.slider8 .slide-content {
+  padding: 40px 30px;
+  position: relative; }
+
+.slider8 .slide1 h2 {
+  font-size: 18px;
+  line-height: 28px; }
+
+.slider8 .slide1 label, .slider8 .slide1 b {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+  line-height: 26px; }
+
+.slider8 .slide1 .b-r {
+  border-bottom: none; }
+
+.slider8 .slide1 .col-6 {
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s; }
+
+.slider8 h3 {
+  font-size: 26px; }
+
+@media (max-width: 1280px) {
+  .slider8 {
+    overflow-y: hidden; }
+    .slider8 .slide-image {
+      height: 550px;
+      width: auto !important; } }
+
+@media (max-width: 1100px) {
+  .slider8 .slide-image {
+    left: -20%;
+    position: relative; }
+  .slider8 .slide-text {
+    width: 80% !important; }
+  .slider8 .slide-content {
+    min-width: 350px;
+    right: 12%; }
+  .slider8 h2.text-white {
+    font-size: 28px; } }
+
+@media (max-width: 992px) {
+  .slider8 .slide-content {
+    min-width: 50px;
+    right: auto; } }
+
+@media (max-width: 767px) {
+  .slider8 .slide-text {
+    padding: 0 !important;
+    width: 100% !important; }
+  .slider8 .slide-content {
+    opacity: 0.9; }
+  .slider8 .slide-image {
+    height: 450px;
+    left: -30%; }
+  .slider8 .carousel-indicators {
+    bottom: -10px; } }
+
+@media (max-width: 428px) {
+  .slider8 .slide-image {
+    left: -100%; }
+  .slider8 h3 {
+    font-size: 24px; }
+  .slider8 .slide-content {
+    padding: 30px; } }

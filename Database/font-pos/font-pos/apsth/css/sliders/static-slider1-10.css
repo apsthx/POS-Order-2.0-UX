@@ -1,0 +1,201 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Static slide 1
+*******************/
+.static-slider1 h1 {
+  font-weight: 700;
+  line-height: 56px; }
+  .static-slider1 h1 span {
+    border-bottom: 3px solid #2cdd9b; }
+
+@media (max-width: 767px) {
+  .static-slider1 h1 {
+    font-weight: 700;
+    line-height: 36px;
+    font-size: 24px; } }
+
+/*******************
+Static slide 2
+*******************/
+.static-slider2 h1 {
+  font-size: 90px;
+  font-weight: 800;
+  line-height: 90px; }
+
+@media (max-width: 767px) {
+  .static-slider2 h1 {
+    font-weight: 700;
+    line-height: 50px;
+    font-size: 50px; } }
+
+/*******************
+Static slide 3
+*******************/
+.static-slider3 {
+  padding: 10% 0; }
+  .static-slider3 h1 {
+    font-weight: 300;
+    line-height: 50px; }
+    .static-slider3 h1 span {
+      border-bottom: 3px solid #2cdd9b; }
+
+@media (max-width: 767px) {
+  .static-slider3 h1 {
+    line-height: 30px;
+    font-size: 24px; } }
+
+/*******************
+Static slide 4
+*******************/
+.static-slider4 h1 {
+  font-weight: 100;
+  line-height: 50px; }
+  .static-slider4 h1 span {
+    border-bottom: 3px solid #188ef4; }
+
+.static-slider4 .info-box {
+  padding: 25px 15px; }
+
+.static-slider4 .img-anim {
+  position: relative;
+  top: 110px; }
+
+@media (max-width: 767px) {
+  .static-slider4 h1 {
+    line-height: 36px;
+    font-size: 24px; }
+  .static-slider4 .img-anim {
+    position: relative;
+    top: 0px; }
+  .static-slider4 .bg-info-gradiant {
+    margin-top: 40px; } }
+
+/*******************
+Static slide 5
+*******************/
+.static-slider5 {
+  padding-top: 80px; }
+  .static-slider5 .middle-image {
+    margin-top: 80px;
+    margin-bottom: -100px; }
+  .static-slider5 .left-right-bg {
+    background-repeat: no-repeat;
+    background-position: left center, right center; }
+
+@media (max-width: 767px) {
+  .static-slider5 .left-right-bg {
+    background-image: none !important; } }
+
+/*******************
+Static slide 6
+*******************/
+.static-slider6 {
+  padding-top: 80px; }
+  .static-slider6 .left-right-bg {
+    background-repeat: no-repeat;
+    background-position: bottom center; }
+  .static-slider6 .video-img {
+    cursor: pointer; }
+
+/*******************
+Static slide 7
+*******************/
+.static-slider7 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  padding: 12% 0; }
+  .static-slider7 h1.title {
+    font-size: 122px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 130px; }
+
+@media (max-width: 767px) {
+  .static-slider7 h1.title {
+    font-size: 60px;
+    line-height: 70px; } }
+
+/*******************
+Static slide 8
+*******************/
+.static-slider8 {
+  padding: 80px 0 0;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center; }
+  .static-slider8 h1.title {
+    font-size: 65px;
+    font-weight: 700; }
+  .static-slider8 .showcase-img {
+    position: relative;
+    margin-bottom: -300px; }
+
+/*******************
+Static slide 9
+*******************/
+.static-slider9 {
+  overflow: hidden; }
+  .static-slider9 .bg-img {
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    right: 0px;
+    height: 100%; }
+    .static-slider9 .bg-img img {
+      margin-left: -200px;
+      padding-top: 100px; }
+  .static-slider9 .container {
+    z-index: 1; }
+  .static-slider9 .info-detail {
+    padding: 15% 15px; }
+    .static-slider9 .info-detail .title {
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 50px; }
+    .static-slider9 .info-detail .subtitle {
+      margin: 50px 0; }
+  .static-slider9 .adv-img {
+    padding-top: 100px; }
+
+@media (max-width: 900px) {
+  .static-slider9 .bg-img {
+    position: relative; }
+    .static-slider9 .bg-img img {
+      margin-left: 0px;
+      padding: 20px; }
+  .static-slider9 .info-detail .title {
+    font-size: 40px; } }
+
+/*******************
+Static slide 10
+*******************/
+.static-slider10 {
+  padding: 10% 0;
+  background-size: cover;
+  background-position: center center; }
+  .static-slider10 .title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px; }
+  .static-slider10 .subtitle {
+    color: #ffffff; }
+
+@media (max-width: 900px) {
+  .static-slider10 .title {
+    font-size: 40px;
+    line-height: 45px; } }

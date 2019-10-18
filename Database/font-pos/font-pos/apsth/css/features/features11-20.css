@@ -1,0 +1,92 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 11
+*******************/
+.wrap-feature11-box {
+  margin-top: 60px; }
+  .wrap-feature11-box .card-body {
+    padding: 40px; }
+  .wrap-feature11-box .icon-space {
+    margin: -80px 0 20px; }
+    .wrap-feature11-box .icon-space .icon-round {
+      font-size: 45px;
+      color: #ffffff; }
+
+/*******************
+Feature 12
+*******************/
+.wrap-feature-12 {
+  position: relative; }
+  .wrap-feature-12 [class*=col-md-12] {
+    margin-bottom: 30px;
+    -webkit-transition: 0.2s ease-in;
+    -o-transition: 0.2s ease-in;
+    transition: 0.2s ease-in; }
+    .wrap-feature-12 [class*=col-md-12]:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+  .wrap-feature-12 .uneven-box {
+    margin-top: 100px; }
+
+/*******************
+Feature 16
+*******************/
+.wrap-feature-16 [class*=col-] {
+  padding: 80px 35px; }
+
+.wrap-feature-16 .with-bg {
+  width: 100%;
+  min-height: 200px;
+  background-size: cover;
+  background-position: center center; }
+
+.wrap-feature-16 .with-text {
+  max-width: 500px;
+  margin-left: 80px; }
+
+/*******************
+Feature 17
+*******************/
+.wrap-feature-17-box.card-group .card {
+  margin-bottom: 0px; }
+
+/*******************
+Feature 18
+*******************/
+.wrap-feature-18 {
+  margin-top: 60px; }
+  .wrap-feature-18 [class*=col-lg-6] .card {
+    overflow: hidden; }
+  .wrap-feature-18 .icon-position {
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    min-height: 200px; }
+    .wrap-feature-18 .icon-position .icon-round {
+      position: absolute;
+      right: -38px;
+      top: 20px; }
+
+/*******************
+Feature 20
+*******************/
+.wrap-feature-20 {
+  margin-top: 60px; }
+  .wrap-feature-20 [class*=col-lg-6] .card {
+    overflow: hidden; }
+  .wrap-feature-20 .linking {
+    width: 100%;
+    display: block;
+    padding: 35px 0; }

@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'sukhumvit';
+    src: url('plus/fonts/sukhumvit-webfont.eot');
+    src: url('plus/fonts/sukhumvit-webfont?#iefix') format('embedded-opentype'),
+         url('plus/fonts/sukhumvit-webfont.woff') format('woff'),
+         url('plus/fonts/sukhumvit-webfont.ttf') format('truetype'),
+         url('plus/fonts/sukhumvit-webfont.svg#quarkbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+h1,h2,h3,h4,#nav{
+		font-family: 'sukhumvit',sans-serif;
+		font-weight: normal;
+	}

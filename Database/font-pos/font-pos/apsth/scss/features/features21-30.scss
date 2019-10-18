@@ -1,0 +1,119 @@
+
+@import '../variable'; 
+/*******************
+Feature 21
+*******************/
+
+.wrap-feature21-box {
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:left center; 
+}
+/*******************
+Feature 22
+*******************/
+.wrap-feature-22{
+    margin-top: 60px;
+    .text-box{
+        padding: 0 30px;
+        h3{
+            margin: 10px 0 25px 0;
+        }
+    }
+    
+}
+/*******************
+Feature 23
+*******************/
+
+.wrap-feature23-box {
+    background-size: cover;
+    background-attachment:fixed;
+    background-position:left center; 
+    .text-box{
+        padding: 30px 20px;
+    }
+}
+
+/*******************
+Feature 24
+*******************/
+.wrap-feature-24{
+    margin-top: 60px;
+    .card{
+        overflow: hidden;
+        transition: 0.3s ease-out;
+         -webkit-transition: 0.3s ease-out;
+        &:hover{
+            transform: translateY(-10px);
+            -webkit-transform: translateY(-10px);
+        }
+    }
+    .service-24{
+        text-align: center;
+        padding:40px 0;
+        display: block;
+        
+        i{
+           @include linear-gradient (to right, $success 0%, $success-dark 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-fill-color:transparent;
+            font-size:50px;
+        }
+        .ser-title{
+            margin: 10px 0 5px;
+            font-weight: 500;
+        }
+        &:hover, &:focus{
+            @include linear-gradient (to right, $success 0%, $success-dark 100%);
+            i, .ser-title{
+                color:$white;
+                text-fill-color:$white;
+                -webkit-text-fill-color:$white;
+            }
+            i{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+/*******************
+Feature 26
+*******************/
+.wrap-feature-26{
+    .max-box{
+        max-width: 580px;
+    }   
+}
+
+.wrap-feature-28{
+    .side-content{
+        max-width: 580px;
+        
+    }
+}
+/*******************
+Feature 29
+*******************/
+.wrap-feature-29{
+    margin-top: 60px;
+    .title, .subtitle{
+        color:$white;
+    }
+    .col-lg-4{
+        margin-top: 30px;
+    }
+}
+/*******************
+Feature 29
+*******************/
+.feature30{
+    position: relative;
+}
+.wrap-feature30-box{
+    position: absolute;
+    top:20%;
+    right: 0px;
+}

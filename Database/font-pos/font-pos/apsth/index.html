@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- Tell the browser to be responsive to screen width -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <!-- Favicon icon -->
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/images/favicon.png">
+        <title>API E-Commerce | POS | Order | Stock Manager V2.0</title>
+        <!-- Bootstrap Core CSS -->
+        <link href="../assets/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- This is for the animation CSS -->
+        <link href="../assets/node_modules/aos/dist/aos.css" rel="stylesheet">
+        <link href="../assets/node_modules/prism/prism.css" rel="stylesheet">
+        <link href="../assets/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" rel="stylesheet">
+        <!-- This page CSS -->
+        <!-- Custom CSS -->
+        <link href="css/shop/shop.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body class="">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader__figure"></div>
+                <p class="loader__label">Wrapkit</p>
+            </div>
+        </div>
+        <!-- ============================================================== -->
+        <!-- Main wrapper - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <div id="main-wrapper">
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <div class="topbar">
+                <div class="header6">
+                    <div class="container po-relative">
+                        <nav class="navbar navbar-expand-lg h6-nav-bar">
+                            <a href="#" class="navbar-brand"><img src="../assets/images/logos/white-text.png" alt="wrapkit" /></a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#h6-info" aria-controls="h6-info" aria-expanded="false" aria-label="Toggle navigation"><span class="ti-menu"></span></button>
+                            <div class="collapse navbar-collapse hover-dropdown font-14 ml-auto" id="h6-info">
+                                <ul class="navbar-nav ml-auto">                                                                        
+                                    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="javascript:void(0);" id="h6-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Shop Demo<i class="fa fa-angle-down m-l-5"></i>
+                                        </a>                                       
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>                                 
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- ============================================================== -->
+            <!-- Top header  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- Page wrapper  -->
+            <!-- ============================================================== -->
+            <div class="page-wrapper">
+                <!-- ============================================================== -->
+                <!-- Container fluid  -->
+                <!-- ============================================================== -->
+                <div class="container-fluid">
+                    <!-- ============================================================== -->
+                    <!-- Static Slider 10  -->
+                    <!-- ============================================================== -->
+                    <div class="banner-innerpage" style="background-image:url(../assets/images/innerpage/banner-bg4.jpg)">
+                        <div class="container">
+                            <!-- Row  -->
+                            <div class="row justify-content-center ">
+                                <!-- Column -->
+                                <div class="col-md-6 align-self-center text-center" data-aos="fade-down" data-aos-duration="1200">
+                                    <h1 class="title">API สินค้า  E-Commerce</h1>
+                                    <h6 class="subtitle op-8">POS | Order | Stock Manager V2.0</h6> </div>
+                                <!-- Column -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Static Slider 10  -->
+                    <!-- ============================================================== -->
+
+                    <!-- ============================================================== -->
+                    <!-- Team 1  -->
+                    <!-- ============================================================== -->
+                    <div class="spacer">
+                        
+                        <!--เพิ่ม ส่วนที่ 1 (ส่วนแสดงหน้า html)-->
+                        <div class="container">
+                            <div class="row m-t-30">
+                                <div class="col-lg-9">
+                                    <div class="d-flex m-b-40">
+                                        <span class="align-self-center" id="shop-showing"></span>
+                                        <div class="align-self-center ml-auto">
+                                            <select class="custom-select col-12" id="shop-select" onchange="load();">
+                                                <option value="9" selected="">แสดง 9 รายการ</option>
+                                                <option value="12">แสดง 12 รายการ</option>
+                                                <option value="24">แสดง 24 รายการ</option>
+                                                <option value="36">แสดง 36 รายการ</option>
+                                                <option value="48">แสดง 48 รายการ</option>
+                                            </select>
+                                        </div>    
+                                    </div>
+                                    <div class="row shop-listing" id="shop-listing">
+                                    </div>   
+                                    <div class="col-lg-12 text-center">
+                                        <input type="hidden" id="shop-base" value="0"/>
+                                        <input type="hidden" id="shop-plus" />
+                                        <div id="shop-show-plus">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <!-- widget  -->
+                                    <div class="m-b-40">
+                                        <h5 class="title">ค้นหาสินค้า</h5>
+                                        <form class="input-form">
+                                            <div class="input-group">
+                                                <input type="text" id="shop-search" onkeypress="if (event.keyCode === 13) {
+                                                     productfilter(); return false;
+                                                }" class="form-control" placeholder="ค้นหาชื่อสินค้า...">
+                                                <span class="input-group-btn">
+                                                    <button class="btn btn-info" type="button" onclick="productfilter();"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="m-b-40">
+                                        <h5 class="title">หมวดหมู่สินค้า</h5>
+                                        <div id="shop-categories">
+                                            
+                                        </div>                                       
+                                    </div>
+                                    <div class="m-b-40">
+                                        <form id="form-shop-cart" method="post">
+                                            <h5 class="title m-b-30">รถเข็น <span id="num-cart"></span></h5>
+                                            <input type="hidden" name="number_ID" id="number_ID" value="1"/>
+                                            <div id="shop-cart">
+                                                <div id="shop-cart-1">
+                                                    <!-- items  -->
+
+                                                    <hr class="op-5">
+                                                    <div class="d-flex no-block m-b-20 m-t-20">
+                                                        <div class="thumb mr-auto" id="shop-cart-img-1">
+                                                            <!--img src="../assets/images/innerpage/shop/1.jpg" alt="wrapkit" width="70"-->
+                                                        </div>
+                                                        <div class="btext m-r-10 text-right">
+                                                            <h6 class="m-b-0 text-right"><a href="javascript:void(0);" class="link" id="product-name-1"></a></h6> 
+                                                            <input type="hidden" name="product_id[]" id="product_id_1" />
+                                                            <input type="hidden" name="product_name[]" id="product_name_1" />
+                                                            <input type="hidden" name="product_amount[]" id="product_amount_1" />
+                                                            <input type="hidden" name="product_unit[]" id="product_unit_1" />
+                                                            <input type="hidden" name="product_price[]" id="product_price_1" />
+                                                            <input type="hidden" name="product_save[]" id="product_save_1" />
+                                                            <input type="hidden" name="product_price_sum[]" id="product_price_sum_1" />
+                                                            <h6 class="font-medium m-t-5 text-right" id="product-price-1"></h6>
+                                                        </div>                                         
+                                                    </div>
+
+                                                </div>
+                                            </div>   
+                                            <div id="shop-cart-payment" style="display: none;">
+                                                <div class="d-flex no-block m-b-20 m-t-20">
+                                                    <h6 class="font-medium m-t-5">ยอดรวมทั้งสิ้น</h6>
+                                                    <input type="hidden" name="price_sum_pay" id="price_sum_pay" />
+                                                    <h6 class="ml-auto" id="total-cart"></h6>
+                                                </div> 
+                                                <div class=" text-center"> 
+                                                    <button type="button" onclick="location.reload();" class="btn btn-danger-gradiant btn-md">ยกเลิกการสั่งซื้อสินค้า</button>
+                                                    <p></p>
+                                                    <button type="button" onclick="checkout();" class="btn btn-info-gradiant btn-md">ดำเนินการสั่งซื้อสินค้า</button>
+                                                </div> 
+                                            </div>
+                                            <div class="modal fade" id="shop-checkout">
+                                                <div class="modal-dialog modal-lg">
+                                                    <div class="modal-content">
+                                                        <div class="modal-body">
+                                                            <div class="bootbox-body" style="color: black; padding: 2px 10px 20px 10px;">
+                                                                <div class="row">
+                                                                    <div class="col-6 text-left">
+                                                                        <h5><b><i class="fa fa-truck"></i> ข้อมูลการจัดส่ง</b></h5>
+                                                                    </div>
+                                                                    <div class="col-6 text-right">
+                                                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><b>×</b></button>
+                                                                    </div>
+                                                                </div>
+                                                                <hr/>
+                                                                <div class="row">
+                                                                    <input type="hidden" name="token" id="token">
+                                                                    <input type="hidden" name="user_id" id="user_id">
+                                                                    <input type="hidden" name="customer_group_id" id="customer_group_id">
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="fullname" class="form-control" placeholder="ชื่อ - สกุล" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="tel" class="form-control" placeholder="เบอร์โทร" onblur="check_phone_format(this);"  data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="email" class="form-control" placeholder="อีเมล" onblur="check_email_format(this);"  data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-12">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="address" class="form-control" placeholder="ที่อยู่" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="district" id="district" class="form-control" placeholder="ตำบล" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="amphoe" id="amphoe" class="form-control" placeholder="อำเภอ" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="province" id="province" class="form-control" placeholder="จังหวัด" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-lg-6">
+                                                                        <div class="form-group">
+                                                                            <input type="text" name="zipcode" id="zipcode" class="form-control" placeholder="รหัสไปรษณีย์" data-parsley-error-message="กรุณากรอกข้อมูล" required="">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>  
+                                                                <hr/>
+                                                                <div class="row">
+                                                                    <div class="col-12 text-center">
+                                                                        <button type="button" onclick="savecheckout();" class="btn btn-info btn-md"> บันทึกการสั่งซื้อสินค้า</button>
+                                                                    </div>
+                                                                </div> 
+                                                            </div>                    
+                                                        </div>                   
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="modal fade" id="shop-detail">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-body">
+                                                <div class="bootbox-body" style="color: black; padding: 10px 20px 20px 20px;">
+                                                    <div class="row">
+                                                        <div class="col-12 text-right">
+                                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><b>×</b></button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row m-t-30">
+                                                        <!-- column  -->
+                                                        <div class="col-lg-5" id="shop-detail-image_name">
+
+                                                        </div>
+                                                        <!-- column  -->
+                                                        <div class="col-lg-6 ml-auto">
+                                                            <h4 class="title" id="shop-detail-product-name"></h4>
+                                                            <h6 class="subtitle" id="shop-detail-category-name"></h6>
+                                                            <h4 class="font-medium m-b-30" id="shop-detail-product-sale-price"></h4>
+                                                            <h5 class="title font-medium">รายละเอียดคุณสมบัติ</h5>
+                                                            <table class="table table-bordered m-b-40">
+                                                                <tbody id="tbody-shop-detail">
+                                                                    <tr>
+                                                                        <td class="text-center">ไม่มีคุณสมบัติ</td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>     
+                                                </div>                    
+                                            </div>                   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--จบเพิ่ม ส่วนที่ 1-->
+                        
+                    </div>
+                    <!-- ============================================================== -->
+                    <!-- End Team 1  -->
+                    <!-- ============================================================== -->
+
+
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Container fluid  -->
+                <!-- ============================================================== -->
+
+                <!-- ============================================================== -->
+                <!-- Back to top -->
+                <!-- ============================================================== -->
+                <a class="bt-top btn btn-circle btn-lg btn-info" href="#top"><i class="ti-arrow-up"></i></a>
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Page wrapper  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+        <footer class="footer6 bg-inverse spacer">
+    <div class="container">
+        <div class="row">
+            <!-- coluumn -->
+            <div class="col-lg-4">
+                <div class="d-flex no-block m-b-10 text-white">
+                    <div class="display-7 m-r-20 "><i class="icon-Phone-2"></i></div>
+                    <div class="info">
+                        <span class="db m-t-5">098-1816769</span>
+                   </div>
+               </div>
+            </div>
+            <!-- coluumn -->
+            <!-- coluumn -->
+            <div class="col-lg-4">
+                <div class="d-flex no-block m-b-10">
+                    <div class="display-7 m-r-20 text-white"><i class="icon-Mail"></i></div>
+                    <div class="info">
+                        <a href="mailto:apsth456@gmail.com.com" class="db white-link m-t-5">apsth456@gmail.com.com</a>
+                   </div>
+               </div>
+            </div>
+            <!-- coluumn -->
+            <!-- coluumn -->
+            <div class="col-lg-4 ml-auto">              
+            </div>
+            <div class="col-md-12 b-t m-t-40">
+                <span style="color: white"> © Powered by © APS 2018, V.2.0-UX All right reserved. </span>
+            </div>
+        </div>
+    </div>
+</footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+
+        <!-- ============================================================== -->
+        <!-- End Wrapper -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- All Jquery -->
+        <!-- ============================================================== -->
+        <script src="../assets/node_modules/jquery/dist/jquery.min.js"></script>
+        <!-- Bootstrap popper Core JavaScript -->
+        <script src="../assets/node_modules/popper/dist/popper.min.js"></script>
+        <script src="../assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <!-- This is for the animation -->
+        <script src="../assets/node_modules/aos/dist/aos.js"></script>
+        <script src="../assets/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+        <!--Custom JavaScript -->
+        <script src="js/custom.min.js"></script>
+        <script src="../assets/node_modules/prism/prism.js"></script>
+        <!-- ============================================================== -->
+        <!-- This page plugins -->
+        <!-- ============================================================== -->
+
+
+        <!--เพิ่ม ส่วนที่ 2 (ส่วนแสดง ค่า และติดต่อ API)-->
+        <link href="thailand-db/jquery.Thailand.min.css" rel="stylesheet">
+        <link href="sweetalert/sweetalert.css" rel="stylesheet">       
+        <script src="thailand-db/dependencies/JQL.min.js"></script>
+        <script src="thailand-db/dependencies/typeahead.bundle.js"></script>
+        <script src="thailand-db/jquery.Thailand.min.js"></script>
+        <script src="sweetalert/sweetalert.min.js"></script>
+        <script src="js/parsley.min.js"></script>
+        <script>
+            
+            var service_base_url = 'https://pos.apsth.com/v2/';   //แก้ 1 base_url sever API
+            var token = 'ea66c06c1e1c05fa9f1aa39d98dc5bc1';     //แก้ 2 token 
+            var customer_group_id = 1;                          //แก้ 3 กลุ่มลูกค้า
+            var user_id = 1;                                    //แก้ 4 ผู้ใช้งานหลัก หรือ เจ้าของร้าน
+
+            $.Thailand({
+                database: 'thailand-db/db.json',
+                $district: $('#district'),
+                $amphoe: $('#amphoe'),
+                $province: $('#province'),
+                $zipcode: $('#zipcode')
+            });
+
+            function check_email_format(input) {
+                var text = $(input).val();
+                var regex = /^(([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5}){1,25})+([;.](([a-zA-Z0-9_\-\.]+)@{[a-zA-Z0-9_\-\.]+0\.([a-zA-Z]{2,5}){1,25})+)*$/;
+                if (regex.test(text) == false) {
+                    $(input).val('');
+                }
+            }
+
+            function check_phone_format(input) {
+                var text = $(input).val();
+                var regex = /^[0-9]{8,15}$/;
+                if (regex.test(text) == false) {
+                    $(input).val('');
+                }
+            }
+
+            function product() {
+                search = $('#shop-search').val();    
+                limit = parseInt($('#shop-select').val()) + parseInt($('#shop-base').val());
+                $.ajax({
+                    url: service_base_url + 'service/api/product',
+                    dataType: "JSON",
+                    type: 'post',
+                    data: {
+                        token: token,
+                        customer_group_id: customer_group_id,
+                        user_id: user_id,
+                        limit: limit,
+                    },
+                    success: function (res) {
+                        html = '';
+                        if (res.data === 'success') {
+                            if(res.product != null){
+                                for (i = 0; i < res.product.length; i++) {
+                                    html += '<div class="col-lg-4">';
+                                    html += '<div class="card shop-hover">';
+                                    html += '<img src="' + service_base_url + 'store/image/' + res.product[i].image_name + '" alt="' + res.product[i].image_name + '" style="height: 240px" class="img-fluid">';
+                                    html += '<div class="card-img-overlay align-items-center">';
+                                    html += '<button class="btn btn-md btn-info-gradiant" onclick="addcart(' + res.product[i].product_id_pri + ')"><i class="fa fa-cart-plus"></i> ใส่ในตะกร้า</button>';
+                                    html += '</div>';
+                                    html += '<a href="javascript:void(0);" onclick="productproperties(' + res.product[i].product_id_pri + ');" ><span class="label label-rounded label-success"><i class="fa fa-eye"></i></span></a>';
+                                    html += '</div>';
+                                    html += '<div class="card">';
+                                    html += '<h6><a href="javascript:void(0);" onclick="productproperties(' + res.product[i].product_id_pri + ');" class="link">' + res.product[i].product_name + '</a></h6>';
+                                    html += '<h6 class="subtitle">' + res.product[i].category_name + '</h6>'
+                                    html += '<h5 class="font-medium m-b-30">' + res.product[i].product_sale_price + '</h5>';
+                                    html += '</div>';
+                                    html += '</div>';
+                                }
+                                $('#shop-listing').html(html);
+                                $('#shop-showing').html('แสดง 1-'+ i + ' ทั้งหมด '+ res.count +' รายการ');
+                                if(i < res.count){ 
+                                    if((i + parseInt($('#shop-select').val())) < res.count){
+                                        $('#shop-show-plus').html('<button onclick="product();" class="btn btn-md btn-success-gradiant"><i class="fa fa-plus-circle"></i> แสดงเพิ่ม ' + $('#shop-select').val() + ' รายการ</button>');
+                                        $('#shop-base').val( parseInt($('#shop-select').val()) + parseInt($('#shop-base').val()));
+                                    }else{
+                                        $('#shop-show-plus').html('<button onclick="product();" class="btn btn-md btn-success-gradiant"><i class="fa fa-plus-circle"></i> แสดงเพิ่ม ' +  (parseInt(res.count) - parseInt(i)) + ' รายการ</button>');
+                                        $('#shop-base').val( parseInt($('#shop-select').val()) + parseInt($('#shop-base').val()));
+                                    }
+                                }else{
+                                    $('#shop-show-plus').html('');
+                                }
+                            }else{
+                                $('#shop-listing').html('<div class="col-lg-12"><div class="text-center text-info">ไม่พบสินค้า<br/><br/></div></div>');
+                                $('#shop-showing').html('');
+                            }
+                        } else {
+                            $('#shop-listing').html('<div class="col-lg-12"><div class="text-center text-danger">Token ไม่ถูกต้องหรือ Token โดนระงับโปรดติดต่อ Admin <br/><br/></div></div>');
+                            $('#shop-showing').html('');
+                        }
+                    }
+                });
+            }
+            
+            function productfilter() {
+                search = $('#shop-search').val();             
+                var category_id = new Array();
+                $("input:checkbox[name=category_id]:checked").each(function () {
+                    category_id.push($(this).val());
+                });
+                $.ajax({
+                    url: service_base_url + 'service/api/productfilter',
+                    dataType: "JSON",
+                    type: 'post',
+                    data: {
+                        token: token,
+                        customer_group_id: customer_group_id,
+                        user_id: user_id,
+                        search: search,
+                        category_id: category_id,
+                        limit: $('#shop-select').val(),
+                    },
+                    success: function (res) {
+                        html = '';
+                        if (res.data === 'success') {
+                            if(res.product != null){
+                                for (i = 0; i < res.product.length; i++) {
+                                    html += '<div class="col-lg-4">';
+                                    html += '<div class="card shop-hover">';
+                                    html += '<img src="' + service_base_url + 'store/image/' + res.product[i].image_name + '" alt="' + res.product[i].image_name + '" style="height: 240px" class="img-fluid">';
+                                    html += '<div class="card-img-overlay align-items-center">';
+                                    html += '<button class="btn btn-md btn-info-gradiant" onclick="addcart(' + res.product[i].product_id_pri + ')"><i class="fa fa-cart-plus"></i> ใส่ในตะกร้า</button>';
+                                    html += '</div>';
+                                    html += '<a href="javascript:void(0);" onclick="productproperties(' + res.product[i].product_id_pri + ');" ><span class="label label-rounded label-success"><i class="fa fa-eye"></i></span></a>';
+                                    html += '</div>';
+                                    html += '<div class="card">';
+                                    html += '<h6><a href="javascript:void(0);" onclick="productproperties(' + res.product[i].product_id_pri + ');" class="link">' + res.product[i].product_name + '</a></h6>';
+                                    html += '<h6 class="subtitle">' + res.product[i].category_name + '</h6>'
+                                    html += '<h5 class="font-medium m-b-30">' + res.product[i].product_sale_price + '</h5>';
+                                    html += '</div>';
+                                    html += '</div>';
+                                }
+                                $('#shop-listing').html(html);
+                                $('#shop-showing').html('แสดง 1-'+ i + ' ทั้งหมด '+ res.count +' รายการ');
+                                $('#shop-show-plus').html('');
+                            }else{
+                                $('#shop-listing').html('<div class="col-lg-12"><div class="text-center text-info">ไม่พบสินค้า<br/><br/></div></div>');
+                                $('#shop-showing').html('');
+                            }
+                        } else {
+                            $('#shop-listing').html('<div class="col-lg-12"><div class="text-center text-danger">Token ไม่ถูกต้องหรือ Token โดนระงับโปรดติดต่อ Admin <br/><br/></div></div>');
+                            $('#shop-showing').html('');
+                        }
+                    }
+                });
+            }
+
+            function productcategory() {
+                $.ajax({
+                    url: service_base_url + 'service/api/productcategory',
+                    dataType: "JSON",
+                    type: 'post',
+                    data: {
+                        token: token,
+                        customer_group_id: customer_group_id,
+                        user_id: user_id,
+                    },
+                    success: function (res) {
+                        html = '';
+                        if (res.data === 'success') {
+                            for (i = 0; i < res.category.length; i++) {
+                                html += '<label class="custom-control custom-checkbox"><input onchange="productfilter();" type="checkbox" checked name="category_id" value="'+ res.category[i].category_id +'" class="custom-control-input"><span class="custom-control-indicator"></span><span class="custom-control-description">' + res.category[i].category_name + '</span></label>';                                
+                            }
+                            $('#shop-categories').html(html);
+                        } else {
+
+                        }
+                    }
+                });
+            }
+
+            function productproperties(product_id_pri) {
+                $.ajax({
+                    url: service_base_url + 'service/api/productproperties',
+                    dataType: "JSON",
+                    type: 'post',
+                    data: {
+                        token: token,
+                        customer_group_id: customer_group_id,
+                        user_id: user_id,
+                        product_id_pri: product_id_pri
+                    },
+                    success: function (res) {
+                        html = '';
+                        $('#tbody-shop-detail').html('<tr><td class="text-center">ไม่มีคุณสมบัติ</td></tr>');
+                        $("#shop-detail").modal('show', {backdrop: 'static'});
+                        $("#shop-detail-image_name").html('<img src="' + service_base_url + 'store/image/' + res.productpropertie[0].image_name + '" alt="' + res.productpropertie[0].image_name + '" class="img-responsive">');
+                        $("#shop-detail-product-name").html(res.productpropertie[0].product_name);
+                        $("#shop-detail-category-name").html(res.productpropertie[0].category_name);
+                        $("#shop-detail-product-sale-price").html(res.productpropertie[0].product_sale_price);
+                        if (res.productpropertie[0].product_brand != null) {
+                            html += '<tr><td>แบรนด์</td><td>' + res.productpropertie[0].product_brand + '</td><tr>';                           
+                            $('#tbody-shop-detail').html(html);
+                        }
+                        if (res.productpropertie[0].product_gen != null) {
+                            html += '<tr><td>รุ่น</td><td>' + res.productpropertie[0].product_gen + '</td><tr>';
+                            $('#tbody-shop-detail').html(html);
+                        }
+                        if (res.productpropertie[0].properties_name != null) {
+                            for (i = 0; i < res.productpropertie.length; i++) {
+                                html += '<tr><td>' + res.productpropertie[i].properties_name + '</td><td>' + res.productpropertie[i].properties_value + '</td><tr>';
+                            }
+                            $('#tbody-shop-detail').html(html);
+                        }
+                    }
+                });
+            }
+
+            function addcart(product_id_pri) {
+                number_ID = $('#number_ID').val();
+                $('#number_ID').val(parseInt(number_ID) + 1);
+                number_ID_next = $('#number_ID').val();
+                $.ajax({
+                    url: service_base_url + 'service/api/productproperties',
+                    dataType: "JSON",
+                    type: 'post',
+                    data: {
+                        token: token,
+                        customer_group_id: customer_group_id,
+                        user_id: user_id,
+                        product_id_pri: product_id_pri
+                    },
+                    success: function (res) {
+                        $('#shop-cart-img-' + number_ID).html('<img src="' + service_base_url + 'store/image/' + res.productpropertie[0].image_name + '" alt="wrapkit" width="70">');
+                        $('#product-name-' + number_ID).html(res.productpropertie[0].product_name);
+                        $('#product-price-' + number_ID).html(res.productpropertie[0].product_sale_price);
+
+                        $('#product_id_' + number_ID).val(res.productpropertie[0].product_id);
+                        $('#product_name_' + number_ID).val(res.productpropertie[0].product_name);
+                        $('#product_amount_' + number_ID).val(1);
+                        $('#product_unit_' + number_ID).val(res.productpropertie[0].product_unit);
+                        $('#product_price_' + number_ID).val(res.productpropertie[0].product_sale_price);
+                        $('#product_save_' + number_ID).val(0);
+                        $('#product_price_sum_' + number_ID).val(res.productpropertie[0].product_sale_price);
+
+                        adddetail(number_ID_next);
+                        totalcart();
+                    }
+                });
+            }
+
+            function adddetail(detail_index) {
+                html = '<div id="shop-cart-' + detail_index + '">';
+                html += '<hr class="op-5">';
+                html += '<div class="d-flex no-block m-b-20 m-t-20">';
+                html += '<div class="thumb mr-auto" id="shop-cart-img-' + detail_index + '">';
+                html += '</div>';
+                html += '<div class="btext m-r-10 text-right">';
+                html += '<h6 class="m-b-0 text-right"><a href="javascript:void(0);" class="link" id="product-name-' + detail_index + '"></a></h6>';
+                html += '<input type="hidden" name="product_id[]" id="product_id_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_name[]" id="product_name_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_amount[]" id="product_amount_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_unit[]" id="product_unit_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_price[]" id="product_price_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_save[]" id="product_save_' + detail_index + '"/>';
+                html += '<input type="hidden" name="product_price_sum[]" id="product_price_sum_' + detail_index + '"/>';
+                html += '<h6 class="font-medium m-t-5 text-right" id="product-price-' + detail_index + '"></h6>';
+                html += '</div>';
+                html += '</div>';
+                html += '</div>';
+                $('#shop-cart').append(html);
+            }
+
+            function totalcart() {
+                sum_price_product = 0;
+                $('input[name^="product_price_sum"]').each(function (i) {
+                    if ($(this).val() !== "") {
+                        sum_price_product += parseFloat($(this).val());
+                    }
+                });
+                $('#shop-cart-payment').show();
+                $('#total-cart').html(parseFloat(sum_price_product).toFixed(2));
+                $('#price_sum_pay').val(parseFloat(sum_price_product).toFixed(2));
+                $('#num-cart').html('( ' + ($('#number_ID').val() - 1) + ' จำนวนสินค้า )');
+            }
+
+            function checkout() {
+                $("#shop-checkout").modal('show', {backdrop: 'static'});
+            }
+
+            function savecheckout() {
+                var form = $("#form-shop-cart");
+                form.parsley().validate();
+                if (form.parsley().isValid() == true) {
+                    $.ajax({
+                        url: service_base_url + 'service/api/save',
+                        method: "POST",
+                        data: $("#form-shop-cart").serialize(),
+                        success: function (res)
+                        {
+                            //console.log(res);
+                            $("#shop-checkout").modal('hide');
+                            if (res == 1) {
+                                swal({   
+                                    title: "สั่งซื้อสำเร็จ !",   
+                                    text: "ระบบจะดำเนินการสั่งซื้อสินค้าในขั้นตอนต่อไป",  
+                                    type: "success",   
+                                    confirmButtonText: "ตกลง",
+                                    confirmButtonColor: "#188ef4",
+                                    showCancelButton: false, 
+                                }, function(isConfirm){   
+                                    if (isConfirm) {     
+                                       location.reload();
+                                    }
+                                });                          
+                            } else {
+                                //console.log(res);
+                            }
+                        }
+                    });
+                }
+            }
+            
+            function load() {
+                $('#shop-base').val(0);
+                product();
+                productcategory();
+                $('#token').val(token);
+                $('#user_id').val(user_id);
+                $('#customer_group_id').val(customer_group_id);
+            }
+
+            $(function () {
+                load();
+            });
+
+        </script>
+        <!--จบเพิ่ม ส่วนที่ 2-->
+
+    </body>
+
+</html>

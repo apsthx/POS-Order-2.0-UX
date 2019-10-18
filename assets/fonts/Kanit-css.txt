@@ -1,0 +1,15 @@
+@font-face {
+    font-family: 'Kanit';
+    src: url('../fonts/Kanit-Light.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Kanit-Light.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/Kanit-Light.woff') format('woff'), /* Modern Browsers */
+    url('../fonts/Kanit-Light.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../fonts/Kanit-Light.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+
+
+html {
+  font-family: 'Kanit';
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}

@@ -1,0 +1,260 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Pricing 1
+*******************/
+.pricing1 .card {
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s; }
+  .pricing1 .card:hover {
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -webkit-font-smoothing: antialiased; }
+
+.pricing1 .badge {
+  top: -13px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100px;
+  margin: 0 auto; }
+
+.pricing1 .title {
+  margin-top: 20px;
+  font-weight: 500;
+  margin-bottom: 5px; }
+
+.pricing1 .subtitle {
+  font-size: 14px; }
+
+.pricing1 .pricing {
+  margin: 20px 0; }
+  .pricing1 .pricing sup {
+    font-size: 18px;
+    top: -20px; }
+  .pricing1 .pricing .display-5 {
+    color: #263238; }
+  .pricing1 .pricing .yearly {
+    display: none; }
+
+.pricing1 .list-inline {
+  margin-top: 30px; }
+  .pricing1 .list-inline li {
+    padding: 8px 0;
+    display: block; }
+
+.pricing1 .bottom-btn {
+  position: relative;
+  bottom: 0px; }
+
+/*******************
+Pricing 2
+*******************/
+.pricing2 {
+  background-size: cover;
+  max-height: 530px;
+  margin-bottom: 250px; }
+  .pricing2 .pricing-box {
+    margin-top: 150px; }
+  .pricing2 .above-card {
+    margin: -70px -32px -32px; }
+    .pricing2 .above-card .card {
+      padding: 30px; }
+  .pricing2 .pricing-text sup {
+    top: -50px;
+    font-size: 24px; }
+  .pricing2 .pricing-text span {
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    color: #263238; }
+  .pricing2 .list-inline {
+    margin: 0 0 30px 0; }
+    .pricing2 .list-inline li {
+      padding: 7px 0; }
+
+@media (max-width: 767px) {
+  .pricing2 {
+    max-height: 100%;
+    margin-bottom: 0px; }
+    .pricing2 .pricing-box {
+      margin-top: 20px; }
+    .pricing2 .display-5 {
+      font-size: 36px; }
+    .pricing2 .above-card {
+      margin: 0; }
+      .pricing2 .above-card .card {
+        padding: 0px; } }
+
+/*******************
+Pricing 3
+*******************/
+.pricing3 .col-lg-2 {
+  padding-right: 0px;
+  position: relative;
+  z-index: 1; }
+
+.pricing3 .col-lg-10 {
+  padding-left: 0px; }
+
+.pricing3 .nav-pills {
+  border: 1px solid rgba(120, 130, 140, 0.13);
+  border-radius: 4px;
+  border-right: 0px; }
+  .pricing3 .nav-pills .nav-link {
+    padding: 30px 25px; }
+    .pricing3 .nav-pills .nav-link h2 {
+      color: #8d97ad; }
+    .pricing3 .nav-pills .nav-link.active {
+      background: #ffffff;
+      border-left: 3px solid #ff4d7e;
+      border-radius: 0px;
+      margin-left: -3px;
+      -webkit-box-shadow: -20px 0 40px rgba(0, 0, 0, 0.1);
+      box-shadow: -20px 0 40px rgba(0, 0, 0, 0.1); }
+      .pricing3 .nav-pills .nav-link.active h2 {
+        color: #263238; }
+
+.pricing3 .tab-content {
+  background: #ffffff;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.1); }
+  .pricing3 .tab-content .pricing-box {
+    padding: 50px 80px; }
+  .pricing3 .tab-content .list-inline {
+    margin-top: 20px; }
+    .pricing3 .tab-content .list-inline li {
+      padding: 30px 0;
+      font-weight: 400; }
+      .pricing3 .tab-content .list-inline li span {
+        display: inline-block;
+        vertical-align: middle; }
+      .pricing3 .tab-content .list-inline li i {
+        font-size: 40px;
+        text-align: center;
+        vertical-align: middle;
+        width: 80px;
+        overflow: hidden;
+        display: inline-block;
+        opacity: 0.5; }
+  .pricing3 .tab-content .bg-image {
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+    .pricing3 .tab-content .bg-image .quote-box {
+      padding: 40px; }
+
+@media (max-width: 767px) {
+  .pricing3 .col-lg-2 {
+    padding-right: 15px; }
+  .pricing3 .col-lg-10 {
+    padding-left: 15px; }
+  .pricing3 .nav-pills {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+    -webkit-flex-direction: row !important;
+    -ms-flex-direction: row !important;
+    flex-direction: row !important;
+    border-bottom: 0px;
+    border-right: 1px solid rgba(120, 130, 140, 0.13); }
+    .pricing3 .nav-pills .nav-link {
+      padding: 25px 18px; }
+      .pricing3 .nav-pills .nav-link.active {
+        border-left: 0px;
+        border-top: 3px solid #ff4d7e;
+        margin-top: -4px;
+        margin-left: 0px;
+        margin-bottom: -1px;
+        -webkit-box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 -20px 40px rgba(0, 0, 0, 0.1); }
+  .pricing3 .tab-content .pricing-box {
+    padding: 20px; } }
+
+/*******************
+Pricing 4
+*******************/
+.pricing4 .price small {
+  color: #8d97ad;
+  font-size: 16px; }
+
+/*******************
+Pricing 5
+*******************/
+.pricing5 .general-listing {
+  margin: 90px 0 60px 0; }
+  .pricing5 .general-listing.only-li li {
+    padding: 20px 0;
+    display: block; }
+
+.pricing5 .card {
+  background-size: 100% !important; }
+
+.pricing5 .yearly {
+  display: none; }
+
+.pricing5 .pricing-box {
+  margin-top: 120px; }
+  .pricing5 .pricing-box .middle-box {
+    margin-top: -75px; }
+    .pricing5 .pricing-box .middle-box .general-listing {
+      margin-top: 60px; }
+
+@media (max-width: 767px) {
+  .pricing5 .pricing-box {
+    margin-top: 40px; }
+    .pricing5 .pricing-box .middle-box {
+      margin-top: 0px; } }
+
+/*******************
+Pricing 6
+*******************/
+.pricing6 .price-box {
+  margin: 20px 0; }
+  .pricing6 .price-box sup {
+    top: -20px;
+    font-size: 16px; }
+  .pricing6 .price-box .display-5 {
+    line-height: 58px; }
+
+.pricing6 .general-listing {
+  padding-left: 30px; }
+  .pricing6 .general-listing.only-li li {
+    padding: 10px 0; }
+
+/*******************
+Pricing 7
+*******************/
+.pricing7 .pricing-box sup {
+  top: -20px;
+  font-size: 16px; }
+
+.pricing7 .pricing-box .btn {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }
+
+/*******************
+Pricing 8
+*******************/
+.pricing8 .pricing-box sup {
+  top: -20px;
+  font-size: 16px; }
+
+.pricing8 .pricing-box .btn {
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px; }

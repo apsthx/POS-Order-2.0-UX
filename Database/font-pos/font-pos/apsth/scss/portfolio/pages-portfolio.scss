@@ -1,0 +1,48 @@
+@import '../variable';
+/*******************
+Testimonial 10
+*******************/
+.testimonial10 {
+    .testi10{
+        .quote-bg{
+            max-width: 800px; 
+            width: 100%;
+            margin: 0 auto;
+            padding: 60px;
+            background: url(../../../assets/images/testimonial/up-quote.png) no-repeat top left, url(../../../assets/images/testimonial/down-quote.png) no-repeat bottom right;
+        }
+        h3{
+            line-height: 40px;
+        }
+        .customer-thumb{
+            margin: 15px 0;
+            img{
+                width: 60px;
+            }
+        }
+    }
+    
+}
+
+@media(max-width:767px) {
+   .testimonial10 {
+       .testi10 h3{
+            line-height: 30px;
+           font-size:20px;
+        }
+    }   
+}
+
+/*******************
+Portfolio 1
+*******************/
+.img-ho{
+    overflow:hidden;
+    img{
+        transition:0.1s ease-in;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}  
+  

@@ -1,0 +1,48 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Testimonial 10
+*******************/
+.testimonial10 .testi10 .quote-bg {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 60px;
+  background: url(../../../assets/images/testimonial/up-quote.png) no-repeat top left, url(../../../assets/images/testimonial/down-quote.png) no-repeat bottom right; }
+
+.testimonial10 .testi10 h3 {
+  line-height: 40px; }
+
+.testimonial10 .testi10 .customer-thumb {
+  margin: 15px 0; }
+  .testimonial10 .testi10 .customer-thumb img {
+    width: 60px; }
+
+@media (max-width: 767px) {
+  .testimonial10 .testi10 h3 {
+    line-height: 30px;
+    font-size: 20px; } }
+
+/*******************
+Portfolio 1
+*******************/
+.img-ho {
+  overflow: hidden; }
+  .img-ho img {
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in; }
+    .img-ho img:hover {
+      -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }

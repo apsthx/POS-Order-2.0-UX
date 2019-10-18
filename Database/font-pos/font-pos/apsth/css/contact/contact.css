@@ -1,0 +1,70 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+contact 2
+*******************/
+.contact2 {
+  padding: 60px 0;
+  margin-bottom: 170px;
+  background-position: center top; }
+  .contact2 .bg-image {
+    background-size: cover;
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex; }
+  .contact2 .detail-box {
+    padding: 40px; }
+    .contact2 .detail-box .round-social {
+      margin-top: 100px; }
+      .contact2 .detail-box .round-social.light a {
+        background: transparent;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        margin: 0 7px;
+        height: 49px;
+        width: 49px;
+        line-height: 49px; }
+  .contact2 .contact-container {
+    position: relative;
+    top: 200px; }
+    .contact2 .contact-container .links a {
+      color: #8d97ad; }
+
+/*******************
+contact 4
+*******************/
+.contact4 {
+  overflow: hidden;
+  position: relative; }
+  .contact4 .form-control {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    color: #ffffff; }
+    .contact4 .form-control:focus {
+      border-color: #ffffff; }
+  .contact4 input::-webkit-input-placeholder,
+  .contact4 textarea::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.7); }
+  .contact4 input:-ms-input-placeholder,
+  .contact4 textarea:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.7); }
+  .contact4 input::placeholder,
+  .contact4 textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7); }
+  .contact4 .right-image {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0; }

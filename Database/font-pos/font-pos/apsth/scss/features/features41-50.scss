@@ -1,0 +1,116 @@
+
+@import '../variable'; 
+/*******************
+Feature 41
+*******************/
+
+.wrap-feature41-box {
+    .f41-tab{
+        display: block;
+        li a{
+           display: flex;
+           margin-bottom: 20px;
+           padding: 25px;
+            .t-icon{
+                margin-right:25px;
+                color:$muted;
+            }
+            h5{
+                font-weight: 500;
+            }
+            h6{
+                font-size: 14px;
+                margin-bottom: 0px;
+            }
+            &.active, &:hover{
+                background: $white;
+                box-shadow: $card-shadow;
+                .t-icon{
+                    @include linear-gradient (to right, $info 0%, $primary 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    text-fill-color:transparent;
+                }
+            }
+        }
+    }
+}
+
+
+/*******************
+Feature 42
+*******************/
+.feature42{
+    background-repeat: no-repeat;
+    background-size: cover;
+    .wrap-feature42-box{
+        padding: 15% 0;
+    }
+}
+/*******************
+Feature 43
+*******************/
+.wrap-feature43-box{
+    .col-md-6{
+        margin-bottom: 50px;
+    }
+}
+/*******************
+Feature 45
+*******************/
+.wrap-feature45-box{
+    margin-top: 60px;
+    .f45-tab{
+        display: table;
+        width: 100%;
+        > a{
+            display: table-cell;
+            border:1px solid $border;
+            text-align: center;
+            padding: 15px 10px;
+            background: $light;
+            color:$dark;
+            &.active{
+                border-bottom-color: transparent;
+                background: $white;
+                font-weight: 400;
+            }
+        }
+        
+    }
+    .tab-pane{
+            padding: 60px 0;
+        }
+}
+/*******************
+Feature 46
+*******************/
+.feature46{
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+/*******************
+Feature 47
+*******************/
+.wrap-feature47-box{
+    .f-47-line{
+        line-height: 40px;
+    }
+}
+
+/*******************
+Feature 48
+*******************/
+.feature48{
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    .wrap-feature48-box{
+        padding: 10% 0;
+    }
+}
+
+/*******************
+Feature 49
+*******************/

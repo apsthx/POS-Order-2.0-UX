@@ -1,0 +1,104 @@
+
+@import '../variable'; 
+/*******************
+Feature 11
+*******************/
+
+.wrap-feature11-box {
+    margin-top: 60px;
+    .card-body {
+        padding: 40px;
+    }
+    .icon-space{
+        margin: -80px 0 20px;
+        .icon-round{
+            font-size:45px;
+            color:$white;
+        }
+    }
+}
+/*******************
+Feature 12
+*******************/
+.wrap-feature-12{
+    position: relative;
+    [class*=col-md-12]{
+        margin-bottom: 30px;
+        transition: 0.2s ease-in;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
+    .uneven-box{
+        margin-top: 100px;
+    }
+}
+/*******************
+Feature 16
+*******************/
+
+.wrap-feature-16{
+    [class*=col-]{
+        padding:80px 35px;
+    }
+    .with-bg{
+        width:100%;
+        min-height: 200px;
+        background-size:cover;
+        background-position: center center;
+    }
+    .with-text{
+        max-width: 500px;
+        margin-left: 80px;
+    }
+}
+
+/*******************
+Feature 17
+*******************/
+.wrap-feature-17-box{
+    &.card-group{
+        .card{
+            margin-bottom: 0px;
+        }
+    }
+} 
+/*******************
+Feature 18
+*******************/
+.wrap-feature-18{
+    margin-top: 60px;
+    [class*=col-lg-6]{
+        .card{
+            overflow: hidden;
+        }   
+    }
+    .icon-position{
+        position: relative;
+        background-size:cover;
+        background-position: center center;
+        min-height: 200px;
+        .icon-round{
+            position: absolute;
+            right:-38px;
+            top:20px;
+        }
+    }
+}
+/*******************
+Feature 20
+*******************/
+.wrap-feature-20{
+    margin-top: 60px;
+    [class*=col-lg-6]{
+        .card{
+            overflow: hidden;
+        }
+        
+    }
+    .linking{
+            width: 100%;
+            display: block;
+            padding:35px 0;
+        }
+}

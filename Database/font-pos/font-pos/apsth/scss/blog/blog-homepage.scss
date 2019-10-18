@@ -1,0 +1,155 @@
+@import '../variable';
+/*******************
+Blog homepage 1
+*******************/
+  
+  .blog-home1 {
+      [class*=col-] {
+          transition: 0.2s ease-in;
+          &:hover {
+              transform: translateY(-10px);
+          } 
+      }
+  }
+
+
+/*******************
+Blog homepage 2
+*******************/
+  
+.blog-home2 {
+    [class*=col-] {
+          transition: 0.2s ease-in;
+          &:hover {
+              transform: translateY(-10px);
+          } 
+      }
+    .date-pos{
+        padding: 10px;
+        display: inline-block;
+        position: absolute;
+        right:10px;
+        top:10px;
+        color:$white;
+        border-radius: $radius;
+        text-align: center;
+        span{
+            display: block;
+            font-size: 30px;
+            line-height: 30px;
+        }
+    }
+}
+
+/*******************
+Blog homepage 3
+*******************/
+  
+.blog-home3 {
+    .date-pos{
+        text-align: center;
+        color:$white;
+        font-size: 12px;
+        padding: 10px;
+    }
+    a{
+       overflow: hidden;
+        img{
+            transition: 0.2s ease-in;
+            &:hover{
+                transform: scale(1.05);    
+            }
+            
+        }
+    }
+}
+
+/*******************
+Blog homepage 4
+*******************/
+  
+.blog-home4 {
+    .tweet{
+        text-align: center;
+        .card-title{
+            color:$white;
+            a{
+                color:$white;
+                &:hover{
+                    color:$dark;
+                }
+            }
+        }
+    }
+}
+@media(min-width:768px) and (max-width:1024px) {
+    .card-columns{
+        column-count:2;
+    }
+}
+
+/*******************
+Blog homepage 5
+*******************/
+
+.blog-home5 {
+    .b-h-box{
+        position:relative;
+        color:$white;
+
+        .card-img-overlay{
+            bottom:0px;
+            top:auto;
+            transition:.2s ease-in;
+            height:45%;
+            overflow:hidden;
+        }
+        .card-title{
+          color:$white;
+          margin:15px 0;
+        }
+        .card-text{
+          display:none;
+        }
+        &:hover{
+            color:$bodytext;
+            .card-img-overlay{
+                height:100%;
+                background:$white;
+                border:3px solid $border;
+
+            }
+            .card-title{
+              color:$dark;
+              margin:15px 0;
+            }
+            .card-text{
+              display:block;
+            }
+        }
+    }
+}
+
+/*******************
+Blog homepage 6
+*******************/
+.blog-home6{
+    .form-control{
+        padding:13px;
+    }
+    .blog-row{
+        margin-bottom:30px;
+        a{
+            color:$dark;
+            &:hover{
+                color:$themecolor;
+            }
+        }
+        h5{
+            font-weight: 500;
+            margin-top: 10px;
+        }
+    }
+}
+
+

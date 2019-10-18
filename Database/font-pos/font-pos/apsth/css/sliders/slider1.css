@@ -1,0 +1,54 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+slide 1
+*******************/
+.slider1 {
+  position: relative; }
+  .slider1 h2 {
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 800;
+    font-size: 36px;
+    padding: 20px;
+    text-transform: uppercase;
+    margin: 0; }
+  .slider1 p {
+    font-size: 18px; }
+    .slider1 p a {
+      border-radius: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      color: #8d97ad;
+      padding-left: 20px;
+      padding-right: 60px; }
+      .slider1 p a i {
+        opacity: 1;
+        right: -2rem;
+        color: #2cdd9b; }
+      .slider1 p a:hover {
+        color: #263238; }
+        .slider1 p a:hover span {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
+        .slider1 p a:hover i {
+          right: -2.7rem;
+          color: #2cdd9b; }
+
+@media (max-width: 767px) {
+  .slider1 .slide-image {
+    min-height: 300px; }
+  .slider1 h2 {
+    font-size: 20px; }
+  .slider1 p a {
+    font-size: 14px; } }

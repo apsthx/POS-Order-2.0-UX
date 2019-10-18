@@ -1,0 +1,158 @@
+@import '../variable';
+/*******************
+Portfolio 1
+*******************/
+.img-ho{
+    overflow:hidden;
+    img{
+        transition:0.1s ease-in;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}  
+  
+/*******************
+Portfolio2
+*******************/
+
+.filterby a {
+    padding: 10px;
+    font-weight: 400;
+    color: $bodytext;
+    &:hover {
+        color: $themecolor;
+    }
+    &:first-child{
+        padding-left:0px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+@media(max-width:767px) {
+    .filterby a {
+        padding: 10px 5px;
+    }
+}
+
+.portfolio-box {
+    margin-top: 40px;
+    .filter {
+        .overlay-box {
+            margin-bottom: 30px;
+            position: relative;
+
+            .img-ho{
+                overflow:hidden;
+                display:block;
+                img{
+                transition:0.1s ease-in;
+                }
+                &:hover img{
+                    transform:scale(1.1);
+                }
+            }
+            .port-text {
+                transition: 0.3s;
+                > div{
+                    padding:20px 0 10px 0;
+                }
+                h5 {
+                    
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin-bottom: 0px;
+                }
+                span {
+                    color:$muted;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+.like-dislike{
+    padding:0px!important;
+    .text-active{
+        display:none;
+    }
+    &.active .text{
+        display:none;
+    }
+    &.active .text-active{
+        display:inline-block;
+    }
+}
+/*******************
+Portfolio4
+*******************/
+
+.portfolio4{
+    
+
+.portfolio-box4 {
+    margin-top: 60px;
+    .filter {
+        .overlay-box {
+            margin-bottom: 30px;
+            position: relative;
+
+            .overlay {
+                position: absolute;
+                background: rgba(29, 200, 205, 0.9);
+                transition: 0.3s;
+                height: 0px;
+                width: 100%;
+                display: none;
+
+                padding-top: 30%;
+                .port-text {
+                    transition: 0.3s;
+                    position: absolute;
+                    top: 0px;
+                    width: 0px;
+                    text-align: center;
+                    h5 {
+                        color: $white;
+                        font-size: 18px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                    }
+                    span {
+                        color: $white;
+                        font-size: 14px;
+                    }
+                } 
+            }
+            &:hover {
+                .overlay {
+                    display: block;
+                    top: 0px;
+                    height: 100%;
+                    .port-text {
+                        top: 43%;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+
+/*******************
+projects
+*******************/
+.img-ho{
+    overflow:hidden;
+    img{
+        transition:0.1s ease-in;
+        &:hover{
+            transform:scale(1.1);
+        }
+    }
+}

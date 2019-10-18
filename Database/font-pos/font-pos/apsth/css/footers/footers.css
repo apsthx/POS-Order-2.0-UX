@@ -1,0 +1,123 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Footer 1
+*******************/
+.footer1 .f1-topbar {
+  border-bottom: 1px dashed rgba(120, 130, 140, 0.13); }
+  .footer1 .f1-topbar .navbar {
+    padding: 0px; }
+    .footer1 .f1-topbar .navbar .navbar-nav .nav-item .nav-link {
+      color: #8d97ad;
+      display: block;
+      padding: 15px 13px; }
+    .footer1 .f1-topbar .navbar .navbar-nav .nav-item:hover .nav-link, .footer1 .f1-topbar .navbar .navbar-nav .nav-item.active .nav-link {
+      color: #316ce8; }
+
+.footer1 .f1-middle {
+  padding: 40px  0; }
+
+.footer1 .f1-bottom-bar {
+  padding: 20px 0;
+  border-top: 1px solid rgba(120, 130, 140, 0.13); }
+
+/*******************
+Footer 2
+*******************/
+.footer2 {
+  padding: 60px 0; }
+  .footer2 .f2-topbar {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+  .footer2 .f2-middle {
+    padding-top: 40px; }
+  .footer2 .link {
+    color: #8d97ad;
+    padding: 10px 15px 10px 0; }
+  .footer2 .general-listing li a i {
+    font-size: 9px;
+    margin-right: 10px; }
+  .footer2 .info-box .d-flex {
+    padding: 15px 0;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+  .footer2 .subscribe-box {
+    background: rgba(120, 130, 140, 0.13);
+    padding: 25px; }
+    .footer2 .subscribe-box .form-control {
+      background: transparent;
+      padding: 10px 0;
+      border: 0px;
+      border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+      color: #ffffff;
+      border-radius: 0px; }
+      .footer2 .subscribe-box .form-control:focus {
+        border-bottom: 1px solid #ffffff; }
+
+/*******************
+Footer 3
+*******************/
+.footer3 {
+  padding-top: 50px; }
+  .footer3 .f3-topbar {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(120, 130, 140, 0.13); }
+    .footer3 .f3-topbar .input-group .form-control {
+      font-size: 16px; }
+    .footer3 .f3-topbar .input-group .btn {
+      padding: 15px 20px; }
+  .footer3 .f3-middle {
+    padding-top: 40px; }
+  .footer3 .general-listing li:hover a, .footer3 .general-listing li:hover i {
+    color: #ffffff; }
+  .footer3 .link {
+    color: #8d97ad; }
+    .footer3 .link:hover {
+      color: #ffffff; }
+  .footer3 .f3-bottom-bar {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 20px 0; }
+    .footer3 .f3-bottom-bar .link {
+      padding: 0 12px; }
+
+/*******************
+Footer 4
+*******************/
+.footer4 .f4-bottom-bar {
+  padding-top: 10px;
+  margin-top: 20px;
+  border-top: 1px solid rgba(120, 130, 140, 0.13); }
+
+.footer5 .form-control {
+  background: #ffffff; }
+
+.footer5 .social-links {
+  margin: 20px 0; }
+  .footer5 .social-links a {
+    color: #8d97ad;
+    opacity: 0.5;
+    padding: 0 15px 0 0; }
+    .footer5 .social-links a:hover {
+      color: #316ce8;
+      opacity: 1; }
+
+/*******************
+Footer 6
+*******************/
+.footer6 .round-social a {
+  background: rgba(120, 130, 140, 0.13);
+  color: #8d97ad;
+  width: 40px;
+  height: 40px;
+  line-height: 40px; }
+  .footer6 .round-social a:hover {
+    color: #ffffff; }

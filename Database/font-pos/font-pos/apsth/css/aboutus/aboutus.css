@@ -1,0 +1,68 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 22
+*******************/
+.wrap-feature-22 {
+  margin-top: 60px;
+  margin-bottom: 60px; }
+  .wrap-feature-22 .text-box {
+    padding: 0 30px; }
+    .wrap-feature-22 .text-box h3 {
+      margin: 10px 0 25px 0; }
+
+/*******************
+team 4
+*******************/
+.team4 {
+  text-align: center; }
+  .team4 .pro-pic {
+    padding: 30px;
+    padding-bottom: 0px; }
+    .team4 .pro-pic img {
+      border-radius: 100%; }
+  .team4 ul {
+    margin-top: 30px; }
+    .team4 ul li a {
+      color: #8d97ad;
+      padding-right: 15px;
+      -webkit-transition: 0.1s ease-in;
+      -o-transition: 0.1s ease-in;
+      transition: 0.1s ease-in;
+      display: block; }
+      .team4 ul li a:hover {
+        -webkit-transform: translate3d(0px, -5px, 0px);
+        transform: translate3d(0px, -5px, 0px); }
+  .team4 .title {
+    margin: 30px 0 0 0; }
+  .team4 .subtitle {
+    margin: 0 0 20px 0;
+    font-size: 13px; }
+
+/*******************
+Footer 4
+*******************/
+.footer4 .f4-bottom-bar {
+  padding-top: 10px;
+  margin-top: 20px; }
+  .footer4 .f4-bottom-bar a {
+    color: #8d97ad; }
+    .footer4 .f4-bottom-bar a:hover {
+      color: #188ef4; }
+
+.footer4 .round-social.light a {
+  width: 34px;
+  height: 34px;
+  line-height: 34px; }
+  .footer4 .round-social.light a:hover {
+    background: #188ef4; }

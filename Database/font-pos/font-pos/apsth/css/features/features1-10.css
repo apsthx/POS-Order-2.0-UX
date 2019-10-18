@@ -1,0 +1,111 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 1
+*******************/
+.wrap-feature1-box .card-body {
+  padding: 40px; }
+
+/*******************
+Feature 2
+*******************/
+.wrap-feature2-box .card-body {
+  padding: 40px; }
+
+/*******************
+Feature 3
+*******************/
+.wrap-feature3-box .card-body {
+  padding: 40px; }
+  .wrap-feature3-box .card-body .icon-space {
+    padding: 0px 40px 20px 0px; }
+
+/*******************
+Feature 4
+*******************/
+.wrap-feature4-box .icon-round {
+  font-size: 45px;
+  width: 80px;
+  color: #316ce8;
+  line-height: 80px;
+  text-align: center;
+  display: inline-block;
+  margin: 20px 0 30px;
+  border-radius: 100%; }
+
+/*******************
+Feature 5
+*******************/
+.wrap-feature5-box .card-body {
+  padding: 30px; }
+  .wrap-feature5-box .card-body .icon-space {
+    padding: 0px 30px 20px 0px;
+    font-size: 45px;
+    margin: 0px; }
+  .wrap-feature5-box .card-body p {
+    margin-bottom: 0px; }
+
+/*******************
+Feature 6
+*******************/
+.wrap-feature6-box {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .wrap-feature6-box .card-body {
+    padding: 30px; }
+    .wrap-feature6-box .card-body .linking {
+      color: #ffffff; }
+      .wrap-feature6-box .card-body .linking:hover {
+        color: #263238; }
+    .wrap-feature6-box .card-body p {
+      opacity: 0.8; }
+  .wrap-feature6-box:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+
+/*******************
+Feature 7
+*******************/
+.wrap-feature7-box {
+  margin-bottom: 30px; }
+
+/*******************
+Feature 8
+*******************/
+.feature8 .list-block li {
+  font-weight: 400;
+  color: #263238; }
+
+/*******************
+Feature 9
+*******************/
+.wrap-feature9-box .card-body {
+  padding: 40px 40px 0px; }
+  .wrap-feature9-box .card-body .icon-space {
+    padding: 0px 40px 20px 0px; }
+
+/*******************
+Feature 10
+*******************/
+.wrap-feature10-box {
+  padding: 100px 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ffffff; }
+  .wrap-feature10-box p {
+    margin: 30px 0 40px; }
+  .wrap-feature10-box .box-title {
+    color: #ffffff; }

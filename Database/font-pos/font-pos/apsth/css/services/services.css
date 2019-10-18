@@ -1,0 +1,39 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 28
+*******************/
+.wrap-feature-28 .side-content {
+  max-width: 580px; }
+
+/*******************
+Feature 10
+*******************/
+.wrap-feature10-box {
+  padding: 100px 20px;
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  color: #ffffff; }
+  .wrap-feature10-box p {
+    margin: 30px 0 40px; }
+  .wrap-feature10-box .box-title {
+    color: #ffffff; }
+
+/*******************
+Feature 3
+*******************/
+.wrap-feature3-box .card-body {
+  padding: 40px; }
+  .wrap-feature3-box .card-body .icon-space {
+    padding: 0px 40px 20px 0px; }

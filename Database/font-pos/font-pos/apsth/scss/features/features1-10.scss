@@ -1,0 +1,145 @@
+  
+@import '../variable';
+/*******************
+Feature 1
+*******************/
+
+.wrap-feature1-box {
+    .card-body {
+        padding: 40px;
+    }
+}
+
+
+/*******************
+Feature 2
+*******************/
+
+.wrap-feature2-box {
+    .card-body {
+        padding: 40px;
+    }
+}
+
+
+/*******************
+Feature 3
+*******************/
+
+.wrap-feature3-box {
+    .card-body {
+        padding: 40px;
+        .icon-space {
+            padding: 0px 40px 20px 0px;
+        }
+    }
+}
+
+
+/*******************
+Feature 4
+*******************/
+
+.wrap-feature4-box {
+    .icon-round {
+        font-size: 45px;
+        width: 80px;
+        color: $themecolor;
+        line-height: 80px;
+        text-align: center;
+        display: inline-block;
+        margin: 20px 0 30px;
+        border-radius: 100%;
+    }
+}
+
+
+/*******************
+Feature 5
+*******************/
+
+.wrap-feature5-box {
+    .card-body {
+        padding: 30px;
+        .icon-space {
+            padding: 0px 30px 20px 0px;
+            font-size: 45px;
+            margin: 0px;
+        }
+        p {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+/*******************
+Feature 6
+*******************/
+
+.wrap-feature6-box {
+    transition: 0.2s ease-in;
+    .card-body {
+        padding: 30px;
+        .linking {
+            color: $white;
+            &:hover {
+                color: $dark;
+            }
+        }
+        p {
+            opacity: 0.8;
+        }
+    }
+    &:hover {
+        transform: scale(1.1)
+    }
+}
+/*******************
+Feature 7
+*******************/
+
+.wrap-feature7-box {
+    margin-bottom: 30px;
+}
+/*******************
+Feature 8
+*******************/
+.feature8{
+    .list-block{
+        li{
+            font-weight: 400;
+            color:$dark;
+        }
+    }
+}
+/*******************
+Feature 9
+*******************/
+
+.wrap-feature9-box {
+    .card-body {
+        padding: 40px 40px 0px;
+        .icon-space {
+            padding: 0px 40px 20px 0px;
+        }
+    }
+}
+
+/*******************
+Feature 10
+*******************/
+.wrap-feature10-box{
+    padding:100px 20px;
+    width:100%;
+    max-width:450px;
+    margin: 0 auto;
+    color:$white;
+    p{
+        margin: 30px 0 40px;
+    }
+    .box-title{
+        color:$white;
+    }
+}
+

@@ -1,0 +1,116 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+team 1
+*******************/
+.team1 .pro-pic {
+  min-height: 200px; }
+  .team1 .pro-pic .card-img-overlay {
+    background: rgba(26, 139, 243, 0.87);
+    display: none; }
+    .team1 .pro-pic .card-img-overlay ul {
+      position: relative;
+      top: 50%;
+      text-align: center; }
+      .team1 .pro-pic .card-img-overlay ul li a {
+        color: #ffffff;
+        padding: 0 10px;
+        -webkit-transition: 0.1s ease-in;
+        -o-transition: 0.1s ease-in;
+        transition: 0.1s ease-in;
+        display: block; }
+        .team1 .pro-pic .card-img-overlay ul li a:hover {
+          -webkit-transform: translate3d(0px, -5px, 0px);
+          transform: translate3d(0px, -5px, 0px); }
+  .team1 .pro-pic:hover .card-img-overlay {
+    display: block; }
+
+/*******************
+team 2
+*******************/
+.team2 .pro-pic {
+  min-height: 200px; }
+  .team2 .pro-pic .card-img-overlay {
+    background: rgba(26, 139, 243, 0.87);
+    display: none; }
+    .team2 .pro-pic .card-img-overlay ul {
+      position: relative;
+      top: 50%;
+      text-align: center; }
+      .team2 .pro-pic .card-img-overlay ul li a {
+        color: #ffffff;
+        padding: 0 10px;
+        -webkit-transition: 0.1s ease-in;
+        -o-transition: 0.1s ease-in;
+        transition: 0.1s ease-in;
+        display: block; }
+        .team2 .pro-pic .card-img-overlay ul li a:hover {
+          -webkit-transform: translate3d(0px, -5px, 0px);
+          transform: translate3d(0px, -5px, 0px); }
+  .team2 .pro-pic:hover .card-img-overlay {
+    display: block; }
+
+.team2 .title {
+  margin: 30px 0 0 0; }
+
+.team2 .subtitle {
+  margin: 0 0 20px 0;
+  font-size: 13px; }
+
+/*******************
+team 3
+*******************/
+.team3 ul {
+  margin-top: 30px; }
+  .team3 ul li a {
+    color: #8d97ad;
+    padding-right: 15px;
+    -webkit-transition: 0.1s ease-in;
+    -o-transition: 0.1s ease-in;
+    transition: 0.1s ease-in;
+    display: block; }
+    .team3 ul li a:hover {
+      -webkit-transform: translate3d(0px, -5px, 0px);
+      transform: translate3d(0px, -5px, 0px); }
+
+.team3 .title {
+  margin: 30px 0 0 0; }
+
+.team3 .subtitle {
+  margin: 0 0 20px 0;
+  font-size: 13px; }
+
+/*******************
+team 4
+*******************/
+.team4 {
+  text-align: center; }
+  .team4 .pro-pic img {
+    border-radius: 100%; }
+  .team4 ul {
+    margin-top: 30px; }
+    .team4 ul li a {
+      color: #8d97ad;
+      padding-right: 15px;
+      -webkit-transition: 0.1s ease-in;
+      -o-transition: 0.1s ease-in;
+      transition: 0.1s ease-in;
+      display: block; }
+      .team4 ul li a:hover {
+        -webkit-transform: translate3d(0px, -5px, 0px);
+        transform: translate3d(0px, -5px, 0px); }
+  .team4 .title {
+    margin: 30px 0 0 0; }
+  .team4 .subtitle {
+    margin: 0 0 20px 0;
+    font-size: 13px; }

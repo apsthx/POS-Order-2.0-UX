@@ -1,0 +1,111 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+slide 6
+*******************/
+.slider6 .slide-text {
+  bottom: 0;
+  top: auto !important;
+  -ms-transform: translate(-50%, 0) !important;
+  transform: translate(-50%, 0) !important;
+  -webkit-transform: translate(-50%, 0) !important;
+  -moz-transform: translate(-50%, 0) !important; }
+
+.slider6 .slider-control span {
+  width: 53px;
+  height: 53px;
+  line-height: 53px;
+  border-radius: 50%; }
+
+.slider6 h2 {
+  line-height: 42px;
+  font-size: 36px; }
+
+.slider6 .btn-md {
+  border: 1px solid #ffffff; }
+
+.slider6 .slide-content {
+  padding: 40px;
+  position: relative;
+  opacity: 0.9; }
+
+.slider6 .price-tag {
+  position: absolute;
+  right: -65px;
+  top: -65px;
+  width: 130px;
+  height: 130px;
+  padding-top: 37px;
+  border-radius: 50%; }
+  .slider6 .price-tag span {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 36px; }
+
+@media (max-width: 767px) {
+  .slider6 .slider-control span {
+    width: 34px;
+    height: 34px;
+    line-height: 34px; }
+  .slider6 h2 {
+    font-size: 28px;
+    line-height: 36px; }
+  .slider6 .slide-text {
+    padding: 0 !important;
+    width: 80% !important; }
+  .slider6 .slide-image {
+    height: 430px; }
+  .slider6 .slide-content {
+    padding: 30px; } }
+
+@media (max-width: 590px) {
+  .slider6 .price-tag {
+    right: 0;
+    top: -80px;
+    left: 0;
+    margin: auto;
+    padding-top: 20px;
+    width: 100px;
+    height: 100px; }
+    .slider6 .price-tag span {
+      font-size: 30px; }
+    .slider6 .price-tag label {
+      font-size: 12px; } }
+
+@media (max-width: 428px) {
+  .slider6 .slider-control span {
+    width: 26px;
+    height: 26px;
+    line-height: 26px;
+    font-size: 12px !important; }
+  .slider6 .slide-content {
+    padding: 30px 20px; }
+  .slider6 .slide-image {
+    left: -90%; }
+  .slider6 h2 {
+    font-size: 22px;
+    line-height: 30px; }
+  .slider6 .btn-md {
+    padding-left: 25px;
+    padding-right: 25px; } }
+
+@media (max-width: 320px) {
+  .slider6 .slide-content {
+    padding: 30px 15px; }
+  .slider6 h2 {
+    font-size: 20px; }
+  .slider6 .btn-md {
+    padding-left: 20px;
+    padding-right: 20px; }
+  .slider6 .slide-image {
+    height: 390px; } }

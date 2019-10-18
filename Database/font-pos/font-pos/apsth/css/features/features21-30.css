@@ -1,0 +1,116 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 21
+*******************/
+.wrap-feature21-box {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; }
+
+/*******************
+Feature 22
+*******************/
+.wrap-feature-22 {
+  margin-top: 60px; }
+  .wrap-feature-22 .text-box {
+    padding: 0 30px; }
+    .wrap-feature-22 .text-box h3 {
+      margin: 10px 0 25px 0; }
+
+/*******************
+Feature 23
+*******************/
+.wrap-feature23-box {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; }
+  .wrap-feature23-box .text-box {
+    padding: 30px 20px; }
+
+/*******************
+Feature 24
+*******************/
+.wrap-feature-24 {
+  margin-top: 60px; }
+  .wrap-feature-24 .card {
+    overflow: hidden;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+    -webkit-transition: 0.3s ease-out; }
+    .wrap-feature-24 .card:hover {
+      -ms-transform: translateY(-10px);
+      transform: translateY(-10px);
+      -webkit-transform: translateY(-10px); }
+  .wrap-feature-24 .service-24 {
+    text-align: center;
+    padding: 40px 0;
+    display: block; }
+    .wrap-feature-24 .service-24 i {
+      background: #2cdd9b;
+      background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+      background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+      background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+      background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+      background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-fill-color: transparent;
+      font-size: 50px; }
+    .wrap-feature-24 .service-24 .ser-title {
+      margin: 10px 0 5px;
+      font-weight: 500; }
+    .wrap-feature-24 .service-24:hover, .wrap-feature-24 .service-24:focus {
+      background: #2cdd9b;
+      background: -webkit-linear-gradient(legacy-direction(to right), #2cdd9b 0%, #1dc8cc 100%);
+      background: -webkit-gradient(linear, left top, right top, from(#2cdd9b), to(#1dc8cc));
+      background: -webkit-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+      background: -o-linear-gradient(left, #2cdd9b 0%, #1dc8cc 100%);
+      background: linear-gradient(to right, #2cdd9b 0%, #1dc8cc 100%); }
+      .wrap-feature-24 .service-24:hover i, .wrap-feature-24 .service-24:hover .ser-title, .wrap-feature-24 .service-24:focus i, .wrap-feature-24 .service-24:focus .ser-title {
+        color: #ffffff;
+        text-fill-color: #ffffff;
+        -webkit-text-fill-color: #ffffff; }
+      .wrap-feature-24 .service-24:hover i, .wrap-feature-24 .service-24:focus i {
+        margin-bottom: 5px; }
+
+/*******************
+Feature 26
+*******************/
+.wrap-feature-26 .max-box {
+  max-width: 580px; }
+
+.wrap-feature-28 .side-content {
+  max-width: 580px; }
+
+/*******************
+Feature 29
+*******************/
+.wrap-feature-29 {
+  margin-top: 60px; }
+  .wrap-feature-29 .title, .wrap-feature-29 .subtitle {
+    color: #ffffff; }
+  .wrap-feature-29 .col-lg-4 {
+    margin-top: 30px; }
+
+/*******************
+Feature 29
+*******************/
+.feature30 {
+  position: relative; }
+
+.wrap-feature30-box {
+  position: absolute;
+  top: 20%;
+  right: 0px; }

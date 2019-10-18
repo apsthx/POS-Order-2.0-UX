@@ -1,0 +1,52 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+c2a-1
+*******************/
+.c2a1 {
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed; }
+
+/*******************
+c2a-5
+*******************/
+.c2a5 {
+  background-position: center center;
+  background-size: cover; }
+
+/*******************
+c2a-8
+*******************/
+.c2a8 {
+  background-position: center center;
+  padding: 180px 0; }
+  .c2a8 .text-box {
+    padding: 30px 20px; }
+
+/*******************
+c2a-9
+*******************/
+.c2a9 {
+  background-position: top center;
+  padding: 90px 0px 280px 0px; }
+
+/*******************
+c2a-10
+*******************/
+.c2a10 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; }
+  .c2a10 .text-box {
+    padding: 30px 20px; }

@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "counterup",
+        "scope": null,
+        "escapedName": "counterup",
+        "name": "counterup",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "E:\\bitbucket\\wrapkit\\assets"
+    ]
+  ],
+  "_from": "counterup@latest",
+  "_id": "counterup@1.0.2",
+  "_inCache": true,
+  "_location": "/counterup",
+  "_nodeVersion": "0.10.25",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/counterup-1.0.2.tgz_1464953669295_0.7280999468639493"
+  },
+  "_npmUser": {
+    "name": "dodopok",
+    "email": "dodopokcamilo@gmail.com"
+  },
+  "_npmVersion": "3.8.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "counterup",
+    "scope": null,
+    "escapedName": "counterup",
+    "name": "counterup",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/counterup/-/counterup-1.0.2.tgz",
+  "_shasum": "07dbe1e5d318c1702dbff8abe25e9a4b8269dc78",
+  "_shrinkwrap": null,
+  "_spec": "counterup",
+  "_where": "E:\\bitbucket\\wrapkit\\assets",
+  "author": {
+    "name": "Benjamin Intal"
+  },
+  "bugs": {
+    "url": "https://github.com/bfintal/Counter-Up/issues"
+  },
+  "demo": "http://bfintal.github.io/Counter-Up/demo/demo.html",
+  "dependencies": {
+    "jquery": ">=1.5",
+    "waypoints": ">=2.0"
+  },
+  "description": "A lightweight jQuery plugin that counts up to a targeted number when the number becomes visible.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "07dbe1e5d318c1702dbff8abe25e9a4b8269dc78",
+    "tarball": "https://registry.npmjs.org/counterup/-/counterup-1.0.2.tgz"
+  },
+  "homepage": "https://github.com/bfintal/Counter-Up",
+  "keywords": [
+    "jquery",
+    "plugin",
+    "counter",
+    "count",
+    "up",
+    "number",
+    "figure",
+    "numeric",
+    "int",
+    "float",
+    "animation"
+  ],
+  "licenses": [
+    {
+      "type": "GPL2",
+      "url": "https://raw.github.com/bfintal/Counter-Up/master/LICENSE"
+    }
+  ],
+  "maintainers": [
+    {
+      "name": "dodopok",
+      "email": "dodopokcamilo@gmail.com"
+    }
+  ],
+  "name": "counterup",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bfintal/Counter-Up.git"
+  },
+  "scripts": {},
+  "title": "Counter-Up",
+  "version": "1.0.2"
+}

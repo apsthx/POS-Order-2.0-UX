@@ -1,0 +1,98 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+Feature 31
+*******************/
+.wrap-feature31-box {
+  overflow: hidden;
+  position: relative; }
+  .wrap-feature31-box .half-radius {
+    border-radius: 62% / 100%;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0; }
+  .wrap-feature31-box .right-image {
+    position: absolute;
+    right: 0px;
+    text-align: center;
+    bottom: -60px; }
+
+/*******************
+Feature 33
+*******************/
+.wrap-feature-33 .play-btn {
+  position: relative; }
+  .wrap-feature-33 .play-btn span.display-1 {
+    font-weight: 500;
+    opacity: 0.15; }
+  .wrap-feature-33 .play-btn a {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    color: #263238;
+    font-weight: 500; }
+    .wrap-feature-33 .play-btn a span {
+      -webkit-box-shadow: 2px 8px 20px rgba(255, 77, 126, 0.5);
+      box-shadow: 2px 8px 20px rgba(255, 77, 126, 0.5); }
+    .wrap-feature-33 .play-btn a:hover {
+      color: #ff4d7e; }
+
+/*******************
+Feature 34
+*******************/
+.wrap-feature34-box {
+  overflow: hidden;
+  position: relative; }
+  .wrap-feature34-box .left-image {
+    position: absolute;
+    left: -15px;
+    text-align: left;
+    top: 0px; }
+
+/*******************
+Feature 35
+*******************/
+.wrap-feature35-box .feature-35-owl .item {
+  position: relative; }
+  .wrap-feature35-box .feature-35-owl .item h4 {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: #ffffff;
+    text-transform: uppercase; }
+
+/*******************
+Feature 36
+*******************/
+.wrap-feature36-box {
+  background-position: right top;
+  background-repeat: no-repeat; }
+
+/*******************
+Feature 38
+*******************/
+.wrap-feature38-box .po-absolute {
+  right: 0px;
+  z-index: 1; }
+
+/*******************
+Feature 39
+*******************/
+.wrap-feature39-box .col-lg-6 > img {
+  margin-left: -40px; }
+
+/*******************
+Feature 40
+*******************/
+.wrap-feature40-box {
+  background-position: left top, top right;
+  background-repeat: no-repeat, no-repeat; }

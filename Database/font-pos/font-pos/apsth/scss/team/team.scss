@@ -1,0 +1,138 @@
+@import '../variable';
+
+/*******************
+team 1
+*******************/ 
+.team1{
+    .pro-pic{
+        min-height:200px;
+        .card-img-overlay{
+            background: rgba(26, 139, 243, 0.87);
+            display: none;
+            
+            ul{
+                position: relative;
+                top:50%;
+                text-align: center;
+                li a{
+                    color:$white;
+                    padding:0 10px;
+                    transition: 0.1s ease-in;
+                    display: block;
+                    &:hover{
+                        
+                        transform: translate3d(0px, -5px, 0px);
+                    }
+                }
+            }
+        }
+        &:hover{
+            .card-img-overlay{
+                display: block;
+            }
+        }
+    }    
+}
+
+/*******************
+team 2
+*******************/ 
+.team2{
+    .pro-pic{
+        min-height:200px;
+        .card-img-overlay{
+            background: rgba(26, 139, 243, 0.87);
+            display: none;
+            
+            ul{
+                position: relative;
+                top:50%;
+                text-align: center;
+                li a{
+                    color:$white;
+                    padding:0 10px;
+                    transition: 0.1s ease-in;
+                    display: block;
+                    &:hover{
+                        
+                        transform: translate3d(0px, -5px, 0px);
+                    }
+                }
+            }
+        }
+        &:hover{
+            .card-img-overlay{
+                display: block;
+            }
+        }
+    } 
+    .title{
+        margin: 30px 0 0 0;
+    }
+    .subtitle{
+        margin: 0 0 20px 0; 
+        font-size: 13px;
+    }
+}
+
+/*******************
+team 3
+*******************/ 
+.team3{
+    ul{
+        margin-top: 30px;
+        li a{
+            color:$muted;
+            padding-right:15px;
+            transition: 0.1s ease-in;
+            display: block;
+            &:hover{
+
+                transform: translate3d(0px, -5px, 0px);
+            }
+            
+        }
+        
+    }
+    .title{
+        margin: 30px 0 0 0;
+    }
+    .subtitle{
+        margin: 0 0 20px 0; 
+        font-size: 13px;
+    }
+}
+
+/*******************
+team 4
+*******************/ 
+.team4{text-align: center;
+    .pro-pic{
+        
+        img{
+            border-radius: 100%;
+        }
+    }
+    ul{
+        margin-top: 30px;
+        li a{
+            color:$muted;
+            padding-right:15px;
+            transition: 0.1s ease-in;
+            display: block;
+            &:hover{
+
+                transform: translate3d(0px, -5px, 0px);
+            }
+            
+        }
+        
+    }
+    .title{
+        margin: 30px 0 0 0;
+    }
+    .subtitle{
+        margin: 0 0 20px 0; 
+        font-size: 13px;
+    }
+}

@@ -1,0 +1,77 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+slide 9
+*******************/
+.slider9 p {
+  color: #b8d0ff; }
+  .slider9 p a {
+    text-decoration: underline; }
+    .slider9 p a:hover {
+      text-decoration: none; }
+
+.slider9 .carousel-indicators {
+  right: auto;
+  margin-left: 11%;
+  margin-right: 11%; }
+
+.slider9 .btn {
+  border: 1px solid #fff; }
+
+.slider9 .col-lg-9 {
+  max-width: 400px; }
+
+@media (max-width: 1100px) {
+  .slider9 .col-md-11 {
+    min-width: 355px; }
+  .slider9 p {
+    font-size: 14px; }
+  .slider9 .carousel-indicators {
+    right: 0; } }
+
+@media (max-width: 992px) {
+  .slider9 .col-md-11 {
+    min-width: 250px; }
+  .slider9 h2 {
+    font-size: 22px;
+    line-height: 30px; } }
+
+@media (max-width: 767px) {
+  .slider9 .bs-slider, .slider9 .carousel-item {
+    max-height: 100% !important; }
+  .slider9 .slide-text {
+    position: relative; }
+  .slider9 .col-md-11 {
+    padding: 25px 15px 50px; }
+  .slider9 .col-lg-9 {
+    max-width: 100%; }
+  .slider9 .carousel-indicators {
+    bottom: -5px; } }
+
+@media (max-width: 320px) {
+  .slider9 h2 {
+    font-size: 17px;
+    line-height: 26px; } }
+
+@media (min-width: 1900px) and (max-width: 2700px) {
+  .slider9 .carousel-indicators {
+    margin-left: 20%; } }
+
+@media (min-width: 1970px) and (max-width: 2700px) {
+  .slider9 .slide-text {
+    -ms-transform: translate(-50%, -100%) !important;
+    transform: translate(-50%, -100%) !important;
+    -webkit-transform: translate(-50%, -100%) !important;
+    -moz-transform: translate(-50%, -100%) !important; }
+  .slider9 .carousel-indicators {
+    margin-left: 26%; } }

@@ -1,0 +1,10 @@
+/* Parsley validation  */
+.parsley-errors-list {display: none;margin: 0px;padding: 0px;}
+.parsley-errors-list.filled {display: block;}
+.parsley-errors-list > li {font-size: 12px;list-style: none;color: #ed5466;}
+.parsley-error {border-color: #ed5466 !important;}
+.parsley-custom-error-message {color: #ed5466;}
+/* checkbox + radio */
+.parsley-error.custom-checkbox > label:before,.parsley-error.custom-radio > label:before,.parsley-error.custom-checkbox:hover > label:before,.parsley-error.custom-radio:hover > label:before {border: 1px solid #ed5466;}
+.parsley-error.custom-checkbox > input[type="checkbox"]:checked + label:before,.parsley-error.custom-radio > input[type="checkbox"]:checked + label:before {border-color: #ed5466;background-color: #ed5466;}
+.parsley-error.custom-checkbox > label,.parsley-error.custom-radio > label {color: #ed5466;}

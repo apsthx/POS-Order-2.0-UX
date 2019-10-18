@@ -1,0 +1,324 @@
+  
+@import '../variable';
+/*******************
+Pricing 1
+*******************/
+.pricing1{
+    .card{
+        transition: 0.1s;
+        &:hover{
+            transform: scale(1.05);
+            -webkit-transform: scale(1.05);
+           -webkit-font-smoothing: antialiased;
+            
+        }
+    }
+    .badge{
+        top: -13px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100px;
+        margin: 0 auto;
+    }
+    .title{
+        margin-top:20px;
+        font-weight: 500;
+        margin-bottom: 5px; 
+    }
+    .subtitle{
+        font-size: 14px;
+    }
+    .pricing{
+        margin: 20px 0;
+        sup{
+            font-size: 18px;
+            top:-20px;
+        }
+        .display-5{
+            color:$dark;
+        }
+        .yearly{
+            display: none;
+        }
+    }
+    .list-inline{
+        margin-top: 30px;
+        
+        li{
+            padding: 8px 0;
+            display: block;
+        }
+    }
+    .bottom-btn{
+        position: relative;
+        bottom: 0px;
+        
+    }
+}
+
+/*******************
+Pricing 2
+*******************/
+.pricing2{
+    background-size: cover;
+    max-height: 530px;
+    margin-bottom: 250px;
+    .pricing-box{
+        margin-top: 150px;
+    }
+    .above-card{
+        margin: -70px -32px -32px;
+        .card{
+            padding: 30px;
+        }
+    }
+    .pricing-text{
+        sup{
+           top:-50px;
+            font-size:24px;
+        }
+        span{
+            font-size: 100px;
+            font-weight: 400;
+            line-height: 100px;
+            color:$dark;
+        }
+    }
+    .list-inline{
+        margin: 0 0 30px 0;
+        li{
+            padding: 7px 0;
+        }
+    }
+}
+@media(max-width:767px) {
+    .pricing2{
+        max-height: 100%;
+        margin-bottom: 0px;
+        .pricing-box{
+            margin-top: 20px;
+        }
+        .display-5{
+            font-size:36px;
+        }
+        .above-card{
+            margin:0;
+            .card{
+                padding: 0px;
+            }
+        }
+    }
+}
+
+/*******************
+Pricing 3
+*******************/
+.pricing3{
+    .col-lg-2{
+        padding-right: 0px;
+        position: relative;
+        z-index: 1;
+    }
+    .col-lg-10{
+        padding-left: 0px;
+    }
+    .nav-pills{
+        border:1px solid $border;
+        border-radius: $radius;
+        border-right: 0px;
+        .nav-link{
+            padding: 30px 25px;
+            h2{
+                color:$bodytext;
+            }
+            &.active{
+                background: $white;
+                border-left:3px solid $danger;
+                border-radius: 0px;
+                margin-left: -3px;
+                box-shadow: -20px 0 40px rgba(0, 0, 0, 0.1);
+                h2{
+                    color:$dark;
+                }
+            }
+        }    
+    }
+    .tab-content{
+        background: $white;
+        overflow: hidden;
+        box-shadow: 0 0 60px rgba(0, 0, 0, 0.1);
+        .pricing-box{
+            padding: 50px 80px;
+        }
+        .list-inline{
+            margin-top: 20px;
+            li{
+                padding: 30px 0;
+                font-weight: 400;
+                span{
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                i{
+                    font-size:40px;
+                    text-align: center;
+                    vertical-align: middle;
+                    width: 80px;
+                    overflow: hidden;
+                    display: inline-block;
+                    opacity: 0.5;
+                }
+            }
+        }
+        .bg-image{
+            background-size:cover;
+            position: relative;
+            display: flex;
+            .quote-box{
+                padding: 40px;
+            }
+        }
+        
+    }
+    
+}
+
+@media(max-width:767px) {
+    .pricing3{
+        .col-lg-2{
+            padding-right: 15px;
+        }
+        .col-lg-10{
+            padding-left: 15px;
+        }
+        .nav-pills{
+            flex-direction: row!important;
+            border-bottom: 0px;
+            border-right: 1px solid $border;
+            .nav-link{
+                padding: 25px 18px;
+                &.active{
+                    border-left:0px;
+                    border-top:3px solid $danger;
+                    margin-top: -4px;
+                    margin-left: 0px;
+                    margin-bottom: -1px;
+                    box-shadow: 0 -20px 40px rgba(0, 0, 0,  0.1);
+                }
+            }
+        }
+        .tab-content{
+            .pricing-box{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+
+/*******************
+Pricing 4
+*******************/
+.pricing4{
+    .price{
+        small{
+            color:$muted;
+            font-size: 16px;
+        }
+    }
+    
+}
+
+/*******************
+Pricing 5
+*******************/
+.pricing5{
+    .general-listing{
+        margin: 90px 0 60px 0;
+        &.only-li li{
+            padding:20px 0;
+            display: block;
+        }
+    }
+    .card{
+            background-size: 100%!important;
+        }
+    .yearly{
+            display: none;
+        }
+    .pricing-box{
+        margin-top: 120px;
+        .middle-box{
+            margin-top: -75px;
+            .general-listing{
+                margin-top: 60px;
+            }
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .pricing5{
+        
+            .pricing-box{
+                margin-top: 40px;
+                .middle-box{
+                margin-top: 0px;
+            }
+        }
+        
+    }
+}
+/*******************
+Pricing 6
+*******************/
+.pricing6{
+    .price-box{
+        margin: 20px 0;
+        sup{
+            top:-20px;
+            font-size: 16px;
+        }
+        .display-5{
+            line-height: 58px;
+        }
+    }
+    .general-listing{
+        padding-left: 30px;
+        &.only-li li{
+            padding: 10px 0;    
+        }
+    }
+}
+/*******************
+Pricing 7
+*******************/
+.pricing7{
+    .pricing-box{
+        sup{
+            top:-20px;
+            font-size: 16px;
+        }
+        .btn{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }   
+    }
+}
+
+/*******************
+Pricing 8
+*******************/
+.pricing8{
+    .pricing-box{
+        sup{
+            top:-20px;
+            font-size: 16px;
+        }
+        .btn{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }   
+    }
+}

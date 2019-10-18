@@ -1,0 +1,98 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+slide 10
+*******************/
+@-webkit-keyframes imagescale {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1); }
+  100% {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3); } }
+@keyframes imagescale {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1); }
+  100% {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3); } }
+
+.slider10 .slide-image {
+  animation: imagescale 15s ease-in-out infinite alternate;
+  -webkit-animation: imagescale 15s ease-in-out infinite alternate;
+  -moz-animation: imagescale 15s ease-in-out infinite alternate;
+  -o-webkit-animation: imagescale 15s ease-in-out infinite alternate; }
+
+.slider10 h2 {
+  font-size: 32px; }
+
+.slider10 .slide-content {
+  padding: 40px;
+  position: relative;
+  max-width: 360px; }
+
+.slider10 label {
+  line-height: 20px;
+  position: absolute;
+  top: -12px; }
+
+.slider10 .specifiaction-box {
+  padding: 20px 40px; }
+
+.slider10 .specifiaction {
+  font-size: 13px; }
+
+.slider10 .tag {
+  color: #ffffff;
+  font-size: 13px;
+  padding: 5px 7px;
+  vertical-align: middle;
+  position: relative;
+  font-weight: 300;
+  top: -2px; }
+  .slider10 .tag::after {
+    border-bottom: 13px transparent solid;
+    border-left: 7px #ff4d7e solid;
+    border-top: 12px transparent solid;
+    content: '';
+    height: 0;
+    right: -7px;
+    position: absolute;
+    top: 0;
+    width: 0; }
+
+.slider10 .carousel-indicators {
+  bottom: 0; }
+  .slider10 .carousel-indicators li {
+    background-color: rgba(0, 0, 0, 0.3); }
+    .slider10 .carousel-indicators li.active {
+      background-color: #263238; }
+
+@media (max-width: 767px) {
+  /*This is for the slider*/
+  .slider10 .slide-image {
+    height: 500px; }
+  .slider10 h2 {
+    font-size: 28px; }
+  .slider10 p {
+    font-size: 14px;
+    margin-top: 20px !important; } }

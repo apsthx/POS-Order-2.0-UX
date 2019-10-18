@@ -1,0 +1,106 @@
+@import '../variable';
+
+/*******************
+topbar color
+*******************/
+.topbar.fixed-header {
+    background: $dark;
+}
+
+/*******************
+Static slide 10
+*******************/
+.static-slider10{
+    min-height: calc(100vh - 150px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: auto;
+    background-size:cover;
+    background-position: center center;
+    .title{
+        color:$white;
+        font-weight: 700;
+        font-size: 100px;
+        line-height: 150px;
+    }
+    .subtitle{
+        color:$white;
+        line-height: 30px;
+    }
+}
+/*******************
+Counter box
+*******************/
+.counter-box [class^=col-]{
+    padding:33px 15px;
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+    &:last-child{
+        border-right:0px; 
+    }
+}
+.counter-box-dark [class^=col-]{
+    
+    border-right: 1px solid $border;
+    &:last-child{
+        border-right:0px; 
+    }
+}
+/*******************
+Testimonial 3
+*******************/
+  
+  .testimonial3 {
+      .testi3 {
+          .card-body {
+              padding: 40px;
+          }
+          h6 {
+              line-height: 26px;
+          }
+          .thumb-img {
+              img {
+                  width: 60px;
+              }
+          }
+          .customer {
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 500;
+          }
+      }
+  }
+
+/*******************
+Blog homepage 1
+*******************/
+  
+  .blog-home1 {
+      [class*=col-] {
+          transition: 0.2s ease-in;
+          &:hover {
+              transform: translateY(-10px);
+          } 
+      }
+  }
+
+.icons-section{
+    background-position: 200px center, right 200px center ; 
+    background-repeat: no-repeat;
+}
+
+/*******************
+Responsive
+*******************/
+@media(max-width:1024px) {
+    .static-slider10{
+        .title{
+                font-size:60px;
+                line-height: 60px;
+            }
+    }
+    .topbar {
+        background: $dark;
+    }
+
+}

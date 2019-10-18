@@ -1,0 +1,104 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+topbar color
+*******************/
+.topbar.fixed-header {
+  background: #263238; }
+
+/*******************
+Static slide 10
+*******************/
+.static-slider10 {
+  min-height: calc(100vh - 150px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  overflow: auto;
+  background-size: cover;
+  background-position: center center; }
+  .static-slider10 .title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 150px; }
+  .static-slider10 .subtitle {
+    color: #ffffff;
+    line-height: 30px; }
+
+/*******************
+Counter box
+*******************/
+.counter-box [class^=col-] {
+  padding: 33px 15px;
+  border-right: 1px solid rgba(255, 255, 255, 0.1); }
+  .counter-box [class^=col-]:last-child {
+    border-right: 0px; }
+
+.counter-box-dark [class^=col-] {
+  border-right: 1px solid rgba(120, 130, 140, 0.13); }
+  .counter-box-dark [class^=col-]:last-child {
+    border-right: 0px; }
+
+/*******************
+Testimonial 3
+*******************/
+.testimonial3 .testi3 .card-body {
+  padding: 40px; }
+
+.testimonial3 .testi3 h6 {
+  line-height: 26px; }
+
+.testimonial3 .testi3 .thumb-img img {
+  width: 60px; }
+
+.testimonial3 .testi3 .customer {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500; }
+
+/*******************
+Blog homepage 1
+*******************/
+.blog-home1 [class*=col-] {
+  -webkit-transition: 0.2s ease-in;
+  -o-transition: 0.2s ease-in;
+  transition: 0.2s ease-in; }
+  .blog-home1 [class*=col-]:hover {
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px); }
+
+.icons-section {
+  background-position: 200px center, right 200px center;
+  background-repeat: no-repeat; }
+
+/*******************
+Responsive
+*******************/
+@media (max-width: 1024px) {
+  .static-slider10 .title {
+    font-size: 60px;
+    line-height: 60px; }
+  .topbar {
+    background: #263238; } }

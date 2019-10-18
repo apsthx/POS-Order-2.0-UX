@@ -1,0 +1,357 @@
+/*
+Template Name: Wrapkit
+Author: wrappixel
+Email: niravjoshi87@gmail.com
+File: scss
+*/
+/*Theme Colors*/
+/*bootstrap Color*/
+/*Light colors*/
+/*Normal Color*/
+/*Extra Variable*/
+/*Gradiant*/
+/*******************
+form 1
+*******************/
+#banner1 {
+  background: right -3em center no-repeat #e9f3f8; }
+  #banner1 h2 {
+    font-size: 48px;
+    line-height: 1;
+    letter-spacing: -1px; }
+  #banner1 input {
+    line-height: 72px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: inline-block;
+    vertical-align: top; }
+  #banner1 input[type="text"] {
+    color: #8d97ad;
+    border-radius: 36px 0 0 36px;
+    text-indent: 35px;
+    padding-right: 15px;
+    width: 61%;
+    font-weight: 300;
+    -webkit-box-shadow: -5px 0 30px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: -5px 0 30px 0 rgba(0, 0, 0, 0.05);
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  #banner1 input[type="submit"] {
+    border-radius: 0 36px 36px 0;
+    width: auto;
+    padding: 0 30px;
+    cursor: pointer;
+    margin-left: -4px;
+    -webkit-box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.05);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    #banner1 input[type="submit"]:hover {
+      opacity: 0.7; }
+
+@media (min-width: 2301px) and (max-width: 2700px) {
+  #banner1 {
+    background-position: 70% center; } }
+
+@media (min-width: 1900px) and (max-width: 2300px) {
+  #banner1 {
+    background-position: 80% center; } }
+
+@media (min-width: 1500px) and (max-width: 1680px) {
+  #banner1 {
+    background-position: right center; } }
+
+@media (max-width: 1100px) {
+  #banner1 {
+    background-position: right -14em center; }
+    #banner1 h2 {
+      font-size: 40px; }
+    #banner1 input[type="text"] {
+      width: 59%; }
+    #banner1 input[type="submit"] {
+      padding: 0 20px; } }
+
+@media (max-width: 767px) {
+  .banner {
+    padding: 30px 0; }
+  #banner1 {
+    background-image: none; }
+    #banner1 input {
+      font-size: 14px;
+      line-height: 50px; }
+    #banner1 input[type="text"] {
+      border-radius: 25px 0 0 25px;
+      text-indent: 20px; }
+    #banner1 input[type="submit"] {
+      border-radius: 0 25px 25px 0;
+      padding: 0 15px; }
+    #banner1 img {
+      margin-top: 25px; } }
+
+@media (max-width: 320px) {
+  #banner1 input[type="submit"] {
+    padding: 0 10px; } }
+
+/*******************
+Form 2
+*******************/
+@media (max-width: 1023px) {
+  .form2 h1 {
+    margin-top: 25px; }
+  .form2 .have-ac {
+    margin-top: 25px; } }
+
+/*******************
+form 3
+*******************/
+#banner2 {
+  max-height: 800px; }
+  #banner2 .w-50 {
+    width: 50%; }
+  #banner2 .form-row {
+    margin: 0; }
+  #banner2 label.font-12 {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 5px; }
+  #banner2 input[type=text] {
+    color: #8d97ad;
+    font-weight: 300;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis; }
+  #banner2 button {
+    cursor: pointer;
+    border-radius: 0; }
+  #banner2 .date label {
+    cursor: pointer;
+    margin: 0; }
+
+@media (max-width: 370px) {
+  #banner2 .left,
+  #banner2 .right {
+    padding: 25px; } }
+
+@media (max-width: 320px) {
+  #banner2 .left,
+  #banner2 .right {
+    padding: 25px 15px; } }
+
+/*******************
+form 4
+*******************/
+.form4 .video-link i {
+  font-size: 36px; }
+
+@media (max-width: 1023px) {
+  .form4 .text-box {
+    margin-top: 25px; } }
+
+/*******************
+Form 5
+*******************/
+.form5 {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: left center; }
+  .form5 .text-box {
+    padding: 10px 15px; }
+  .form5 .input-icon i {
+    top: 17px;
+    right: 30px; }
+
+/*******************
+form 6
+*******************/
+.form6 {
+  overflow: hidden;
+  position: relative; }
+  .form6 .right-image {
+    background-position: center bottom;
+    background-size: cover;
+    background-repeat: none;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0; }
+
+@media (max-width: 1023px) {
+  .form6 .contact-form {
+    padding-left: 0;
+    padding-right: 0; } }
+
+@media (max-width: 767px) {
+  .form6 .contact-form {
+    padding-left: 15px;
+    padding-right: 15px; } }
+
+/*******************
+form 7
+*******************/
+#banner3 h2 {
+  font-size: 36px;
+  line-height: 1.2; }
+
+#banner3 input,
+#banner3 button {
+  line-height: 30px; }
+
+#banner3 input[type=text] {
+  border-radius: 3px 0 0 3px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis; }
+
+#banner3 button {
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  border: none; }
+  #banner3 button:hover {
+    opacity: 0.8; }
+
+#banner3 .suggetion i {
+  font-size: 34px;
+  color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+#banner3 .suggetion span {
+  display: inline-block;
+  padding-left: 50px; }
+
+@media (max-width: 992px) {
+  #banner3 h2 {
+    font-size: 30px;
+    padding: 0 15px; } }
+
+@media (max-width: 767px) {
+  #banner3 h2 {
+    font-size: 26px; }
+  #banner3 .col-sm-6 {
+    margin-right: auto;
+    margin-left: 0 !important; } }
+
+@media (max-width: 428px) {
+  #banner3 {
+    padding-bottom: 50px; }
+    #banner3 h2 {
+      font-size: 22px; } }
+
+@media (max-width: 590px) {
+  #banner3 .form-data {
+    padding: 0 15px; }
+  #banner3 .suggetion {
+    padding: 0 15px; } }
+
+/*******************
+form 8
+*******************/
+.form8 .blog-row {
+  margin-bottom: 30px; }
+  .form8 .blog-row a {
+    color: #263238; }
+    .form8 .blog-row a:hover {
+      color: #316ce8; }
+  .form8 .blog-row h5 {
+    font-weight: 500;
+    margin-top: 10px; }
+
+/*******************
+form 9
+*******************/
+#banner4 h2 {
+  font-size: 36px;
+  line-height: 1.2; }
+
+#banner4 button {
+  border-radius: 0;
+  line-height: 43px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-size: 20px; }
+  #banner4 button:hover {
+    opacity: 0.95; }
+
+#banner4 input,
+#banner4 .span-select {
+  border-radius: 0;
+  font-size: 12px;
+  line-height: 1.7;
+  border: none;
+  border-bottom: 1px solid rgba(120, 130, 140, 0.13);
+  color: #8d97ad;
+  font-weight: 300;
+  display: block; }
+
+#banner4 .form-data {
+  border: 15px solid rgba(34, 50, 70, 0.5); }
+  #banner4 .form-data select {
+    background: tranparent;
+    font-size: 12px;
+    color: #8d97ad;
+    font-weight: 300; }
+  #banner4 .form-data .sec-icon i {
+    left: 15px;
+    top: 18px;
+    position: absolute;
+    font-size: 20px;
+    z-index: 10; }
+  #banner4 .form-data .date label {
+    position: absolute;
+    right: 15px;
+    top: 8px; }
+    #banner4 .form-data .date label i {
+      left: 0;
+      top: 0; }
+  #banner4 .form-data .span-select {
+    overflow: hidden;
+    position: relative; }
+    #banner4 .form-data .span-select i {
+      right: 0;
+      top: 8px;
+      left: auto;
+      position: absolute;
+      font-size: 20px; }
+    #banner4 .form-data .span-select select {
+      min-width: 250px; }
+
+@media (max-width: 767px) {
+  #banner4 .b-b {
+    border: none; }
+  #banner4 h2 {
+    font-size: 32px; }
+  #banner4 input {
+    margin-left: 20px; } }
+
+@media (max-width: 428px) {
+  #banner4 .form-data {
+    overflow: hidden; }
+    #banner4 .form-data .span-select select {
+      width: 110%; } }
+
+@media (max-width: 320px) {
+  #banner4 input,
+  #banner4 select {
+    padding-left: 0;
+    padding-right: 0; }
+  #banner4 input {
+    margin-left: 45px; }
+  #banner4 .form-data .bg-white {
+    padding-left: 0;
+    padding-right: 0; }
+  #banner4 .form-data .sec-icon i {
+    left: 10px; }
+  #banner4 .form-data .date label {
+    right: 25px; }
+  #banner4 .form-data .span-select i {
+    right: 10px;
+    left: auto; }
+  #banner4 .form-data .span-select select {
+    margin-left: 20px;
+    width: 100%; } }

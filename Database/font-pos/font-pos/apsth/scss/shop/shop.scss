@@ -1,0 +1,33 @@
+@import '../variable';
+
+/*******************
+shop listing
+*******************/ 
+.shop-listing{
+    .shop-hover {
+        position: relative;
+        .card-img-overlay{
+            display: none;
+            background: rgba(255, 255, 255, 0.5);
+            
+            justify-content:center;
+        }
+        &:hover .card-img-overlay{
+            display: flex;
+        }
+        .label{
+            padding: 5px 10px;
+            position: absolute;
+            top:10px;
+            right:10px;
+        }
+    }    
+}
+/*******************
+shop table
+*******************/ 
+.shop-table{
+    td{
+        padding: 30px 0;
+    }
+}
